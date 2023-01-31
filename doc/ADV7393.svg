@@ -3,7 +3,7 @@
 id="d2-svg"
 style="background: white;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
+width="1835" height="1306" viewBox="-102 -148 1835 1306"><style type="text/css">
 <![CDATA[
 .shape {
   shape-rendering: geometricPrecision;
@@ -796,7 +796,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 .md .contains-task-list:dir(rtl) .task-list-item-checkbox {
   margin: 0 -1.6em 0.25em 0.2em;
 }
-</style><g id="G0"><g class="shape" ><rect x="656" y="189" width="678" height="482" style="fill:#E3E9FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="995.000000" y="653.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">SOC</text><g transform="translate(1318 173)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</style><g id="G0"><g class="shape" ><rect x="858" y="372" width="757" height="482" style="fill:#E3E9FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="1236.500000" y="354.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">SOC</text><g transform="translate(1599 356)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -808,21 +808,8 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 <rect width="32" height="32" fill="white"/>
 </clipPath>
 </defs>
-<text class="text-bold" x="677.000000" y="503.000000" style="text-anchor:middle;font-size:97px;fill:black;opacity:0.3">UNLICENSED COPY</text></svg>
-</g><title>Софт процессор</title></g><g id="G1"><g class="shape" ><rect x="0" y="0" width="578" height="957" style="fill:#E3E9FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="289.000000" y="33.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">ADV7393 AXI</text><g transform="translate(562 -16)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3427_35082111)">
-<path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
-<path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16 19.998V15.998" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16 12H16.0098" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_3427_35082111">
-<rect width="32" height="32" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-</g><title>Контроллер ИМС ADV7393 с поддержкой DMA</title></g><g id="G2"><g class="shape" ><rect x="728" y="756" width="186" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="821.000000" y="822.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">ADC7393 IC</text><g transform="translate(898 740)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text class="text-bold" x="817.000000" y="553.000000" style="text-anchor:middle;font-size:114px;fill:black;opacity:0.3">UNLICENSED COPY</text></svg>
+</g><title>Софт процессор</title></g><g id="G1"><g class="shape" ><rect x="0" y="0" width="827" height="788" style="fill:#E3E9FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text" x="413.500000" y="33.000000" style="text-anchor:middle;font-size:28px;fill:#0A0F25">ADV7393 AXI</text><g transform="translate(811 -16)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -835,7 +822,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>ИМС Кодера</title></g><g id="G3"><g class="shape" ><rect x="915" y="0" width="160" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="995.000000" y="66.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">DDR3 IC</text><g transform="translate(1059 -16)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>Контроллер ИМС ADV7393 с поддержкой DMA</title></g><g id="G2"><g class="shape" ><rect x="930" y="930" width="186" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1023.000000" y="996.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">ADC7393 IC</text><g transform="translate(1100 914)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -848,7 +835,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>ИМС DDR3</title></g><g id="title"><g class="shape" ></g><text class="text-bold text-underline" x="666.500000" y="-26.000000" style="text-anchor:middle;font-size:20px;fill:#0A0F25">ADV7393 AXI</text></g><g id="G0.U0"><g class="shape" ><rect x="1088" y="470" width="171" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1173.500000" y="536.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">AXI Slave</text><g transform="translate(1243 454)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>ИМС Кодера</title></g><g id="G3"><g class="shape" ><rect x="1116" y="186" width="160" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1196.000000" y="252.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">DDR3 IC</text><g transform="translate(1260 170)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -861,7 +848,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>Ведомый на шине для подключения к ресурсам SOC</title></g><g id="G0.U1"><g class="shape" ><rect x="731" y="264" width="179" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="820.500000" y="330.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">I2C Master</text></g><g id="G1.U0"><g class="shape" ><rect x="75" y="311" width="205" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="177.500000" y="377.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">AXI RD Master</text><g transform="translate(264 295)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>ИМС DDR3</title></g><g id="G4"><g class="shape" ><rect x="1266" y="930" width="124" height="126" style="fill:#F7F8FE;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1328.000000" y="996.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">TV</text><g transform="translate(1374 914)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -874,7 +861,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>Мастер чтения на шине AXI</title></g><g id="G1.U1"><g class="shape" ><rect x="86" y="547" width="183" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="177.500000" y="613.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Line Buffer</text><g transform="translate(253 531)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>Телевизор</title></g><g id="title"><g class="shape" ></g><text class="text-bold text-underline" x="807.500000" y="-26.000000" style="text-anchor:middle;font-size:20px;fill:#0A0F25">ADV7393 AXI</text></g><g id="G0.U0"><g class="shape" ><rect x="1369" y="447" width="171" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1454.500000" y="513.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">AXI Slave</text><g transform="translate(1524 431)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -887,7 +874,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>Буфер строки - DCFIFO</title></g><g id="G1.U2"><g class="shape" ><rect x="87" y="75" width="180" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="177.000000" y="141.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Frame Ctrl</text><g transform="translate(251 59)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>Ведомый на шине для подключения к ресурсам SOC</title></g><g id="G0.U2"><g class="shape" ><rect x="1005" y="447" width="182" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1096.000000" y="513.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">AXI Master</text><g transform="translate(1171 431)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -900,7 +887,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>Контроллер фрейма. Обеспечивает логику Double Frame Buffer</title></g><g id="G1.U3"><g class="shape" ><rect x="267" y="756" width="236" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="385.000000" y="822.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">ADV7393 Interface</text><g transform="translate(487 740)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>Ведущий на шине AXI</title></g><g id="G0.U1"><g class="shape" ><rect x="933" y="653" width="179" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="1022.500000" y="719.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">I2C Master</text></g><g id="G1.U0"><g class="shape" ><rect x="547" y="311" width="205" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="649.500000" y="377.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">AXI RD Master</text><g transform="translate(736 295)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -913,7 +900,7 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>Формирователь интерфейса ADV7393</title></g><g id="G1.U4"><g class="shape" ><rect x="318" y="311" width="134" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="385.000000" y="377.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">CSR</text><g transform="translate(436 295)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</g><title>Мастер чтения на шине AXI</title></g><g id="G1.U1"><g class="shape" ><rect x="311" y="587" width="236" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="429.000000" y="653.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Line Double Buffer</text><g transform="translate(531 571)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3427_35082111)">
 <path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
 <path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -926,8 +913,47 @@ width="1554" height="1207" viewBox="-102 -148 1554 1207"><style type="text/css">
 </clipPath>
 </defs>
 </svg>
-</g><title>Регистры контроля и статуса</title></g><g id="G1.(U0 &lt;-&gt; U1)[0]"><marker id="mk-2510427236" markerWidth="10.000000" markerHeight="12.000000" refX="3.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="10.000000,0.000000 0.000000,6.000000 10.000000,12.000000" /> </marker><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 177.000000 441.000000 L 177.000000 543.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="142.000000" y="498.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">FIFO Bus</text></g><g id="G1.(U1 &lt;-&gt; U3)[0]"><path d="M 176.000000 677.000000 L 176.000000 809.000000 S 176.000000 819.000000 186.000000 819.000000 L 263.000000 819.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="211.000000" y="797.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">FIFO Bus</text></g><g id="G1.(U2 &lt;-&gt; U0)[0]"><path d="M 177.000000 205.000000 L 177.000000 307.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="223.500000" y="262.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">Request Bus</text></g><g id="G1.(U4 &lt;-&gt; U2)[0]"><path d="M 385.000000 307.000000 L 385.000000 148.000000 S 385.000000 138.000000 375.000000 138.000000 L 271.000000 138.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/></g><g id="G1.(U4 &lt;-&gt; U3)[0]"><path d="M 385.000000 441.000000 L 385.000000 752.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/></g><g id="(G1.U4 &lt;-&gt; G0)[0]"><path d="M 456.000000 374.000000 L 652.000000 374.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="554.000000" y="363.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">Ctrl Interface</text></g><g id="(G0.U0 &lt;-&gt; G1.U0)[0]"><path d="M 1084.000000 508.000000 L 238.000000 508.000000 S 228.000000 508.000000 228.000000 498.000000 L 228.000000 441.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="623.000000" y="530.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">AXI Bus</text></g><g id="(G1.U3 -&gt; G2)[0]"><path d="M 505.000000 819.000000 L 724.000000 819.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="616.000000" y="808.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">DDR Int</text></g><g id="(G0.U1 &lt;-&gt; G2)[0]"><path d="M 820.000000 394.000000 L 820.000000 752.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/><text class="text-italic" x="852.500000" y="579.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">Ctrl CSR</text></g><g id="(G3 &lt;-&gt; G0)[0]"><path d="M 995.000000 130.000000 L 995.000000 185.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#2082085431)"/></g><mask id="2082085431" maskUnits="userSpaceOnUse" x="-100" y="-100" width="1554" height="1207">
-<rect x="-100" y="-100" width="1554" height="1207" fill="white"></rect>
+</g><title>Буфер строки - DCFIFO</title></g><g id="G1.U2"><g class="shape" ><rect x="547" y="75" width="180" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="637.000000" y="141.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">Frame Ctrl</text><g transform="translate(711 59)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3427_35082111)">
+<path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
+<path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 19.998V15.998" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 12H16.0098" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3427_35082111">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><title>Контроллер фрейма. Обеспечивает логику Double Frame Buffer</title></g><g id="G1.U3"><g class="shape" ><rect x="75" y="351" width="236" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="193.000000" y="417.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">ADV7393 Interface</text><g transform="translate(295 335)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3427_35082111)">
+<path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
+<path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 19.998V15.998" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 12H16.0098" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3427_35082111">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><title>Формирователь интерфейса ADV7393</title></g><g id="G1.U4"><g class="shape" ><rect x="311" y="75" width="134" height="126" style="fill:#EDF0FD;stroke:#0D32B2;stroke-width:2;" /></g><text class="text-bold" x="378.000000" y="141.000000" style="text-anchor:middle;font-size:16px;fill:#0A0F25">CSR</text><g transform="translate(429 59)" class="appendix-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3427_35082111)">
+<path d="M16 31.1109C24.3456 31.1109 31.1111 24.3454 31.1111 15.9998C31.1111 7.65415 24.3456 0.888672 16 0.888672C7.65436 0.888672 0.888885 7.65415 0.888885 15.9998C0.888885 24.3454 7.65436 31.1109 16 31.1109Z" fill="white" stroke="#DEE1EB"/>
+<path d="M16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26Z" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 19.998V15.998" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 12H16.0098" stroke="#2E3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3427_35082111">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><title>Регистры контроля и статуса</title></g><g id="G1.(U0 &lt;-&gt; U1)[0]"><marker id="mk-2510427236" markerWidth="10.000000" markerHeight="12.000000" refX="3.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="10.000000,0.000000 0.000000,6.000000 10.000000,12.000000" /> </marker><marker id="mk-3990223579" markerWidth="10.000000" markerHeight="12.000000" refX="7.000000" refY="6.000000" viewBox="0.000000 0.000000 10.000000 12.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon class="connection" fill="#0D32B2" stroke-width="2" points="0.000000,0.000000 10.000000,6.000000 0.000000,12.000000" /> </marker><path d="M 649.000000 441.000000 L 649.000000 640.000000 S 649.000000 650.000000 639.000000 650.000000 L 551.000000 650.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="684.000000" y="600.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">FIFO Bus</text></g><g id="G1.(U1 &lt;-&gt; U3)[0]"><path d="M 307.000000 650.000000 L 241.000000 650.000000 S 231.000000 650.000000 231.000000 640.000000 L 231.000000 481.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="196.000000" y="609.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">FIFO Bus</text></g><g id="G1.(U2 &lt;-&gt; U0)[0]"><path d="M 637.000000 205.000000 L 637.000000 307.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="683.500000" y="262.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">Request Bus</text></g><g id="G1.(U4 &lt;-&gt; U2)[0]"><path d="M 449.000000 138.000000 L 543.000000 138.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/></g><g id="G1.(U4 &lt;-&gt; U3)[0]"><path d="M 355.000000 205.000000 L 355.000000 404.000000 S 355.000000 414.000000 345.000000 414.000000 L 315.000000 414.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/></g><g id="(G0.U0 &lt;-&gt; G1.U0)[0]"><path d="M 1426.000000 443.000000 L 1426.000000 414.000000 S 1426.000000 404.000000 1416.000000 404.000000 L 756.000000 404.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="1111.000000" y="426.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">AXI Bus</text></g><g id="(G1.U3 -&gt; G2)[0]"><path d="M 153.000000 479.000000 L 153.000000 983.000000 S 153.000000 993.000000 163.000000 993.000000 L 926.000000 993.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="284.000000" y="982.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">DDR Int</text></g><g id="(G0.U1 &lt;-&gt; G2)[0]"><path d="M 1022.000000 783.000000 L 1022.000000 926.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="1054.500000" y="898.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">Ctrl CSR</text></g><g id="(G3 &lt;-&gt; G0.U0)[0]"><path d="M 1280.000000 249.000000 L 1473.000000 249.000000 S 1483.000000 249.000000 1483.000000 259.000000 L 1483.000000 443.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/></g><g id="(G3 &lt;-&gt; G0.U2)[0]"><path d="M 1151.000000 316.000000 L 1151.000000 443.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/></g><g id="(G0.U2 &lt;-&gt; G1.U4)[0]"><path d="M 1001.000000 510.000000 L 409.000000 510.000000 S 399.000000 510.000000 399.000000 500.000000 L 399.000000 205.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-start="url(#mk-2510427236)" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="548.000000" y="532.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">Ctrl Interface</text></g><g id="(G2 -&gt; G4)[0]"><path d="M 1118.000000 993.000000 L 1262.000000 993.000000" class="connection" style="fill:none;stroke:#0D32B2;stroke-width:2;" marker-end="url(#mk-3990223579)" mask="url(#1813821562)"/><text class="text-italic" x="1191.000000" y="982.000000" style="text-anchor:middle;font-size:16px;fill:#676C7E">PAL</text></g><mask id="1813821562" maskUnits="userSpaceOnUse" x="-100" y="-100" width="1835" height="1306">
+<rect x="-100" y="-100" width="1835" height="1306" fill="white"></rect>
 
 </mask><style type="text/css"><![CDATA[
 .text {

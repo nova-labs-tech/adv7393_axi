@@ -1,3 +1,4 @@
+direction: right
 title: ADV7393 AXI {
   near: top-center
   shape: text
@@ -9,31 +10,34 @@ title: ADV7393 AXI {
 }
 G0: SOC {
   tooltip: Софт процессор
-  U0: AXI Slave { tooltip: Ведомый на шине для подключения к ресурсам SOC }
-  U1: I2C Master 
+  U0: AXI Slave {tooltip: Ведомый на шине для подключения к ресурсам SOC}
+  U2: AXI Master {tooltip: Ведущий на шине AXI}
+  U1: I2C Master
 }
 
 G1: ADV7393 AXI {
   tooltip: Контроллер ИМС ADV7393 с поддержкой DMA
-  U0 : AXI RD Master { tooltip: Мастер чтения на шине AXI } 
-  U1 : Line Buffer { tooltip: Буфер строки - DCFIFO }
-  U2 : Frame Ctrl { tooltip: Контроллер фрейма. Обеспечивает логику Double Frame Buffer }
-  U3 : ADV7393 Interface { tooltip: Формирователь интерфейса ADV7393 }
-  U4 : CSR { tooltip: Регистры контроля и статуса }
+  U0: AXI RD Master {tooltip: Мастер чтения на шине AXI}
+  U1: Line Double Buffer {tooltip: Буфер строки - DCFIFO}
+  U2: Frame Ctrl {tooltip: Контроллер фрейма. Обеспечивает логику Double Frame Buffer}
+  U3: ADV7393 Interface {tooltip: Формирователь интерфейса ADV7393}
+  U4: CSR {tooltip: Регистры контроля и статуса}
 
-  U0 <-> U1 : FIFO Bus
-  U1 <-> U3 : FIFO Bus
-  U2 <-> U0 : Request Bus
-  U4 <-> U2  
-  U4 <-> U3  
+  U0 <-> U1: FIFO Bus
+  U1 <-> U3: FIFO Bus
+  U2 <-> U0: Request Bus
+  U4 <-> U2
+  U4 <-> U3
 }
 
 G2: ADC7393 IC {tooltip: ИМС Кодера}
-G3: DDR3 IC { tooltip: ИМС DDR3 } 
+G3: DDR3 IC {tooltip: ИМС DDR3}
+G4: TV {tooltip: Телевизор}
 
-G1.U4 <-> G0 : Ctrl Interface
-G0.U0 <-> G1.U0 : AXI Bus
-G1.U3 -> G2 : DDR Int
-G0.U1 <-> G2 : Ctrl CSR
-G3 <-> G0
-    
+G0.U0 <-> G1.U0: AXI Bus
+G1.U3 -> G2: DDR Int
+G0.U1 <-> G2: Ctrl CSR
+G3 <-> G0.U0
+G3 <-> G0.U2
+G0.U2 <-> G1.U4: Ctrl Interface
+G2 -> G4: PAL
