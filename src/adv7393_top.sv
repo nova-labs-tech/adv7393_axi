@@ -1,9 +1,5 @@
-module adv7393_top #(
-  parameter M_AXI_DWIDTH = 128,
-  parameter S_AXI_DWIDTH = 32,
-  parameter S_AXI_AWIDTH = 4, 
-  paraemter CSR_ENABLE   = 0
-)(
+module adv7393_top import adv7393_pkg::*;
+(
 	input                       clk,
 	input                       reset,       
   
