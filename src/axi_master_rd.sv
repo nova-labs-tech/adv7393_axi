@@ -7,9 +7,7 @@ module axi_master_rd #(
 	parameter AXI_DWIDTH      = 128,
   parameter AXI_AWIDTH      = 32,
   parameter AXI_IDWIDTH     = 1,
-  parameter AXIS_DWIDTH     = AXI_DWIDTH,
-  parameter CTRL_WIDTH      = $size(AxiMasterRdCtrl_t),
-  parameter STATUS_WIDTH    = $size(AxiMasterRdStatus_t)
+  parameter AXIS_DWIDTH     = AXI_DWIDTH
 ) (
 	input                               clk, 
 	input                               rst, 
@@ -44,12 +42,11 @@ module axi_master_rd #(
   output AxiMasterRdStatus_t          m_axis_status_tdata,
   output                              m_axis_status_tlast,
 
-
-  output [AXIS_DWIDTH-1:0]            s_axis_fifo_tdata,
-  output [AXIS_DWIDTH/8:0]            s_axis_fifo_tkeep,
-  output                              s_axis_fifo_tlast,
-  output                              s_axis_fifo_tvalid,
-  input                               s_axis_fifo_tready = '0
+  output [AXIS_DWIDTH-1:0]            m_axis_fifo_tdata,
+  output [AXIS_DWIDTH/8:0]            m_axis_fifo_tkeep,
+  output                              m_axis_fifo_tlast,
+  output                              m_axis_fifo_tvalid,
+  input                               m_axis_fifo_tready = '0
 
 );
 
@@ -71,38 +68,39 @@ typedef enum int {  ST_IDLE = 0,
                   } fsm_t;
 
 always_comb begin
-  transaction_go <= s_axis_cmd_tready && s_axis_cmd_tvalid;
-  transaction_complete <= 
+  transaction_go       <= s_axis_cmd_tready && s_axis_cmd_tvalid;
+  transaction_complete <=
 end
+
 
 always_ff @(posedge clk or posedge rst) begin
   if(rst) begin
-      AxiMasterRdCtrl_t ctrl <= '0;
-      s_axis_cmd_tready <= '1;
-      fsm_t fsm;
-  end 
+    AxiMasterRdCtrl_t ctrl <= '0;
+    s_axis_cmd_tready <= '1;
+    fsm_t fsm;
+  end
   else begin
-      
-      if(transaction_complete) 
-        s_axis_cmd_tready <= '1;
-      else if(s_axis_cmd_tvalid) 
-        s_axis_cmd_tready <= '0;
 
-      case (fsm)
-        ST_IDLE: begin
-          if(transaction_go) begin
-            ctrl <= s_axis_cmd_tdata;
-            fsm <= ST_GEN_ADDR;
-          end
+    if(transaction_complete)
+      s_axis_cmd_tready <= '1;
+    else if(s_axis_cmd_tvalid)
+      s_axis_cmd_tready <= '0;
+
+    case (fsm)
+      ST_IDLE : begin
+        if(transaction_go) begin
+          ctrl <= s_axis_cmd_tdata;
+          fsm  <= ST_GEN_ADDR;
         end
-        ST_GEN_ADDR: begin
-          s_axis_cmd_tready <= '1;
-        end
-        ST_TRANSACTION: begin
-          
-        end
-        default : fsm <= ST_IDLE;
-      endcase
+      end
+      ST_GEN_ADDR : begin
+        s_axis_cmd_tready <= '1;
+      end
+      ST_TRANSACTION : begin
+
+      end
+      default : fsm <= ST_IDLE;
+    endcase
 
   end
 end

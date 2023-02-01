@@ -2,7 +2,7 @@ import adv7393_pkg::*;
 
 module adv7393_regblock #(
   parameter CSR_ENABLE                  = 0,
-  parameter ADV7393RegBlock_t REG_BLOCK = def_config
+  parameter ADV7393RegBlock_t REG_DEFAULT = adv7393_pkg::def_config
 )(
 	input clk,    // Clock
 	input reset,  // Asynchronous reset active
@@ -29,15 +29,15 @@ module adv7393_regblock #(
   input                       s_axi_rready,
   output                      s_axi_arvalid   = '0,
   output [S_AXI_DWIDTH-1:0]   s_axi_rdata     = '0,
-  output [1:0]                s_axi_rresp     = '0
+  output [1:0]                s_axi_rresp     = '0,
 
-  output ADV7393RegBlock_t    reg_block;
+  output ADV7393RegBlock_t    reg_block
 
 );
 
 initial if(CSR_ENABLE == 1) $error("Unsupported parameter %s", `__LINE__);
 
-assign reg_block = def_config;
+assign reg_block = REG_DEFAULT;
 
 
 endmodule : adv7393_regblock

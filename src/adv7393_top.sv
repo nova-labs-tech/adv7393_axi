@@ -1,4 +1,7 @@
 module adv7393_top import adv7393_pkg::*;
+#(
+  parameter VERSION = 0
+)
 (
 	input                       clk,
 	input                       reset,       
@@ -57,8 +60,31 @@ module adv7393_top import adv7393_pkg::*;
 
 );
 
+ADV7393RegBlock_t reg_block;
 
-
+adv7393_regblock i_adv7393_regblock (
+  .clk              (clk          ),
+  .reset            (reset        ),
+  .s_axi_awready    (s_axi_awready),
+  .s_axi_awvalid    (s_axi_awvalid),
+  .s_axi_awaddr     (s_axi_awaddr ),
+  .s_axi_awprot     (s_axi_awprot ),
+  .s_axi_wready     (s_axi_wready ),
+  .s_axi_wvalid     (s_axi_wvalid ),
+  .s_axi_wdata      (s_axi_wdata  ),
+  .s_axi_wstrb      (s_axi_wstrb  ),
+  .s_axi_bready     (s_axi_bready ),
+  .s_axi_bvalid     (s_axi_bvalid ),
+  .s_axi_bresp      (s_axi_bresp  ),
+  .s_axi_arready    (s_axi_arready),
+  .s_axi_arvalid    (s_axi_arvalid),
+  .s_axi_araddr     (s_axi_araddr ),
+  .s_axi_arprot     (s_axi_arprot ),
+  .s_axi_rready     (s_axi_rready ),
+  .s_axi_rdata      (s_axi_rdata  ),
+  .s_axi_rresp      (s_axi_rresp  ),
+  .reg_block        (reg_block    )
+);
 
 
 
