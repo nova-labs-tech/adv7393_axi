@@ -1,53 +1,52 @@
-
-`timescale 1ns/1ns
+// synopsys translate_off
+`timescale 1 ns / 1 ns
+// synopsys translate_on
 
 import axi_pkg::*;
 
 module axi_master_rd #(
-	parameter AXI_DWIDTH      = 128,
-  parameter AXI_AWIDTH      = 32,
-  parameter AXI_IDWIDTH     = 1,
-  parameter AXIS_DWIDTH     = AXI_DWIDTH
+  parameter AXI_DWIDTH  = 128       ,
+  parameter AXI_AWIDTH  = 32        ,
+  parameter AXI_IDWIDTH = 1         ,
+  parameter AXIS_DWIDTH = AXI_DWIDTH
 ) (
-	input                               clk, 
-	input                               rst, 
-	
-  //! AXI Master  
-  output logic  [AXI_IDWIDTH-1:0]     m_axi_arid,     
-  output logic  [AXI_AWIDTH-1:0]      m_axi_araddr,
-  output logic  [7:0]                 m_axi_arlen,
-  output logic  [2:0]                 m_axi_arsize,
-  output logic  [1:0]                 m_axi_arburst,
-  output logic                        m_axi_arlock,
-  output logic  [3:0]                 m_axi_arcache,
-  output logic  [2:0]                 m_axi_arprot,
-  output logic  [3:0]                 m_axi_arregion,
-  output logic  [3:0]                 m_axi_arqos,
-  output logic                        m_axi_arvalid,
-  input                               m_axi_arready = '0,
-
-  input         [AXI_IDWIDTH-1:0]     m_axi_rid = '0,
-  input         [AXI_DWIDTH-1:0]      m_axi_rdata = '0,
-  input         [1:0]                 m_axi_rresp = '0,
-  input                               m_axi_rlast = '0,
-  input                               m_axi_rvalid = '0,
-  output logic                        m_axi_rready
-
-  input                               s_axis_cmd_tvalid = '0,
-  output logic                        s_axis_cmd_tready,
-  input AxiMasterRdCtrl_t             s_axis_cmd_tdata = '0,
-
-  output logic                        m_axis_status_tvalid,
-  input                               m_axis_status_tready = '0,
-  output AxiMasterRdStatus_t          m_axis_status_tdata,
-  output                              m_axis_status_tlast,
-
-  output [AXIS_DWIDTH-1:0]            m_axis_fifo_tdata,
-  output [AXIS_DWIDTH/8:0]            m_axis_fifo_tkeep,
-  output                              m_axis_fifo_tlast,
-  output                              m_axis_fifo_tvalid,
-  input                               m_axis_fifo_tready = '0
-
+  input                          clk                 ,
+  input                          rst                 ,
+  //! AXI Master
+  output logic [AXI_IDWIDTH-1:0] m_axi_arid          ,
+  output logic [ AXI_AWIDTH-1:0] m_axi_araddr        ,
+  output logic [            7:0] m_axi_arlen         ,
+  output logic [            2:0] m_axi_arsize        ,
+  output logic [            1:0] m_axi_arburst       ,
+  output logic                   m_axi_arlock        ,
+  output logic [            3:0] m_axi_arcache       ,
+  output logic [            2:0] m_axi_arprot        ,
+  output logic [            3:0] m_axi_arregion      ,
+  output logic [            3:0] m_axi_arqos         ,
+  output logic                   m_axi_arvalid       ,
+  input                          m_axi_arready       ,
+  //!
+  input        [AXI_IDWIDTH-1:0] m_axi_rid           ,
+  input        [ AXI_DWIDTH-1:0] m_axi_rdata         ,
+  input        [            1:0] m_axi_rresp         ,
+  input                          m_axi_rlast         ,
+  input                          m_axi_rvalid        ,
+  output logic                   m_axi_rready
+  //!
+  input                          s_axis_cmd_tvalid   ,
+  output logic                   s_axis_cmd_tready   ,
+  input  AxiMasterRdCtrl_t       s_axis_cmd_tdata    ,
+  //!
+  output logic                   m_axis_status_tvalid,
+  input                          m_axis_status_tready,
+  output AxiMasterRdStatus_t     m_axis_status_tdata ,
+  output                         m_axis_status_tlast ,
+  //!
+  output       [AXIS_DWIDTH-1:0] m_axis_fifo_tdata   ,
+  output       [AXIS_DWIDTH/8:0] m_axis_fifo_tkeep   ,
+  output                         m_axis_fifo_tlast   ,
+  output                         m_axis_fifo_tvalid  ,
+  input                          m_axis_fifo_tready
 );
 
 localparam VERSION = 0;

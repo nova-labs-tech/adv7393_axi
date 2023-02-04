@@ -6,6 +6,7 @@ parameter S_AXI_DWIDTH = 32 ;
 parameter S_AXI_AWIDTH = 4  ;
 parameter CSR_ENABLE   = 4  ;
 parameter TEST_ENABLE  = 0  ;
+parameter VERSION      = 0  ;
 
 localparam REG_WIDTH         = 32;
 localparam PIXELS_PER_SYMBOL = 4 ;
@@ -16,7 +17,7 @@ typedef struct {
   Reg_t LineLength;   // Длина строчки в пикселях
   Reg_t Lines;        // Количество линий в фрейме
   Reg_t FramePhases;  // Количество фаз в выходном потоке
-} FrameCtrl_t;      // Настройка фрейма
+} FrameCtrl_t;        // Настройка фрейма
 
 typedef struct {
   Reg_t Base;       // Базовый адрес буфера
@@ -46,9 +47,11 @@ localparam Reg_t COUNT        = 2;
 localparam BUFFER_DEPTH       = LINE_LEN/PIXELS_PER_SYMBOL;
 localparam BUFFER_COUNT       = 2;
 localparam BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
+localparam PHASE_W            = $clog2(FRAME_PHASES);
+localparam LINES_CNT_W        = $clog2(LINES);
 
 ADV7393RegBlock_t def_config = {
-  '{ '0, '0 },
+  '{ VERSION, '0 },
   '{ LINE_LEN, LINES, FRAME_PHASES },
   '{ BASE, LINE_STEP, COUNT }
 };

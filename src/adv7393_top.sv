@@ -1,7 +1,10 @@
-module adv7393_top import adv7393_pkg::*;
-#(
-  parameter VERSION = 0
-)
+// synopsys translate_off
+`timescale 1 ns / 1 ns
+// synopsys translate_on
+
+import adv7393_pkg::*
+
+module adv7393_top
 (
 	input                       clk,
 	input                       reset,       
@@ -90,6 +93,8 @@ adv7393_regblock i_adv7393_regblock (
 
 
 
-endmodule : adv7393_top
+
+
+endmodule
 
 

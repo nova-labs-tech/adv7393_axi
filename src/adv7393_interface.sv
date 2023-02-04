@@ -1,25 +1,47 @@
-module adv7393_interface #(
-  parameter 
-)(
-	input               clk, 
-  input               reset,
+// synopsys translate_off
+`timescale 1 ns / 1 ns
+// synopsys translate_on
 
-  input               clk_pixel = '0,
+import adv7393_pkg::*;
 
-  input               line_ready = '0,
-
-  // Mask fifo read interface (normal fifo)
-  input [15:0]        line_fifo_dout = '0,
-  output logic        line_fifo_rd_req,
-  input               line_fifo_empty = '0,
-
-  //! IC interface
-  output              ic_clkin,
-  output              ic_hsync,
-  output              ic_vsync,
-  output [15:0]       ic_data
-
-	
+module adv7393_interface (
+  input                                clk_pixel     ,
+  input                                rst           ,
+  //!
+  input                                ena           ,
+  //!
+  input                                fb_read_rdy   ,
+  //!
+  output logic [         PHASES_W-1:0] phase         ,
+  output logic [      LINES_CNT_W-1:0] line          ,
+  output logic                         frame_ends    ,
+  output logic                         blanking      ,
+  //! 
+  input        [PIXEL_STORED_SIZE-1:0] line_buf_dout ,
+  input                                line_buf_dval ,
+  output logic                         line_buf_read ,
+  input                                line_buf_empty,
+  //! 
+  output                               ic_clkin      ,
+  output                               ic_hsync      ,
+  output                               ic_vsync      ,
+  output       [                 15:0] ic_data
 );
 
-endmodule : adv7393_interface
+
+always_comb begin
+  ic_clkin = clk_pixel;
+end
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule

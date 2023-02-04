@@ -9,5 +9,4 @@ typedef struct packed {
   logic success;
 } AxiMasterRdStatus_t;
 
-
 endpackage : axi_pkg
