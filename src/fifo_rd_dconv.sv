@@ -2,8 +2,6 @@
 `timescale 1 ns / 1 ns
 // synopsys translate_on
 
-// Should be rewritten
-
 module fifo_rd_dconv #(
   parameter FIFO_DWIDTH = 64,
   parameter OUT_DWIDTH  = 16,
@@ -35,39 +33,45 @@ initial begin
     $error("PIPELINE can't be greater than 2"); 
 end
 
-logic                   fifo_dval, fifo_dval_d;
-logic                   delay_ena      ;
-logic [  MULT_CNTW-1:0] cnt            ;
-logic [FIFO_DWIDTH-1:0] fifo_dout_delay;
-
 generate if (FIFO_DWIDTH > OUT_DWIDTH) begin
 
-delayreg #(.WIDTH(1), .DELAY(PIPELINE+1)) i_delayreg (
-  .clk  (clk      ),
-  .ena  ('1),
-  .data (fifo_read),
-  .delay(fifo_dval)
+logic                  conv_read_d   ;
+logic [ MULT_CNTW-1:0] data_sel      ;
+logic [ MULT_CNTW-1:0] read_cnt      ;
+logic                  read_cnt_zero ;
+logic [OUT_DWIDTH-1:0] conv_dout_muxo;
+
+delayreg #(.WIDTH(1), .DELAY(PIPELINE)) i0_delayreg (
+  .clk  (clk        ),
+  .rst  (rst        ),
+  .ena  ('1         ),
+  .data (conv_read  ),
+  .delay(conv_read_d)
 );
 
-always_ff @(posedge clk) fifo_dout_d <= fifo_dval ? fifo_dout : fifo_dout_d;
-always_ff @(posedge clk) fifo_dval_d <= fifo_dval;
+bcnts #(.MAX(MULTIPLE-1), .BEHAVIOR("ROLL")) i0_bcnts (
+  .clk(clk), .aclr(rst), .ena(conv_read), .q(read_cnt) );
 
-mux #(.DWIDTH(OUT_DWIDTH), .INPUTS(MULTIPLE)) 
-i_mux (.data(fifo_dout_d), .sel(cnt), .q(conv_dout));
+bcnts #(.MAX(MULTIPLE-1), .BEHAVIOR("ROLL")) i1_bcnts (
+  .clk(clk), .aclr(rst), .ena(conv_read_d), .q(data_sel) );
+
+mux #(.DWIDTH(FIFO_DWIDTH), .INPUTS(MULTIPLE)) 
+i_mux (.data(fifo_dout), .sel(data_sel), .q(conv_dout_muxo));
 
 always_comb begin
-  conv_empty = fifo_empty && ;
-  fifo_read  = conv_read && fifo_read_en;
-  conv_dval  = ;
+  read_cnt_zero = (read_cnt == '0);
+  fifo_read = conv_read && read_cnt_zero;
+  conv_empty = fifo_empty && read_cnt_zero;
 end
 
-always_ff @(posedge clk or posedge rst) begin
-  if(rst) begin
-    cnt <= '0;
-  end else begin
+delayreg #(.WIDTH(1 + OUT_DWIDTH), .DELAY(PIPELINE)) i1_delayreg (
+  .clk  (clk        ),
+  .rst  (rst        ),
+  .ena  ('1         ),
+  .data ({conv_read_d, conv_dout_muxo}  ),
+  .delay({conv_dval, conv_dout})
+);
 
-  end
-end
 end 
 else if (FIFO_DWIDTH < OUT_DWIDTH) begin
   $error("Unsupported parameter %s", `__LINE__);
