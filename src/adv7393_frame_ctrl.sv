@@ -13,7 +13,7 @@ module adv7393_frame_ctrl (
   //!
   input                          fb_write_rdy        ,
   //!
-  input        [    PHASE_W-1:0] phase               ,
+  input                          field               ,
   input        [LINES_CNT_W-1:0] line                ,
   input                          frame_ends          ,
   //!

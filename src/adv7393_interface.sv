@@ -8,11 +8,9 @@ module adv7393_interface (
   input                                clk_pixel     ,
   input                                rst           ,
   //!
-  input                                ena           ,
-  //!
   input                                fb_read_rdy   ,
   //!
-  output logic [         PHASES_W-1:0] phase         ,
+  output                               field         ,
   output logic [      LINES_CNT_W-1:0] line          ,
   output logic                         frame_ends    ,
   output logic                         blanking      ,
@@ -31,6 +29,7 @@ module adv7393_interface (
 
 always_comb begin
   ic_clkin = clk_pixel;
+
 end
 
 

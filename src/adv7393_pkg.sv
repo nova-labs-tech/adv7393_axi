@@ -8,20 +8,19 @@ parameter CSR_ENABLE   = 4  ;
 parameter TEST_ENABLE  = 0  ;
 parameter VERSION      = 0  ;
 
-localparam REG_WIDTH         = 32;
-localparam PIXELS_PER_SYMBOL = 4 ;
+parameter REG_WIDTH         = 32;
+parameter PIXELS_PER_SYMBOL = 4 ;
 
 typedef logic [REG_WIDTH-1:0] Reg_t;
 
 typedef struct {
   Reg_t LineLength;   // Длина строчки в пикселях
   Reg_t Lines;        // Количество линий в фрейме
-  Reg_t FramePhases;  // Количество фаз в выходном потоке
 } FrameCtrl_t;        // Настройка фрейма
 
 typedef struct {
   Reg_t Base;       // Базовый адрес буфера
-  Reg_t LineStep;   // Шаг записи линии
+  Reg_t LineStep;   // Шаг записи строки
   Reg_t Count;      // Количество кадров в буфере
 } BufferCtrl_t;     // Настройка буфера
 
@@ -31,29 +30,54 @@ typedef struct {
 } Status_t;
 
 typedef struct packed {
+  int start;  
+  int stop;
+} LineActInterval_t;
+
+typedef struct packed {
+  int               Lines        ;
+  int               PixelsPerLine;
+  LineActInterval_t odd          ;
+  LineActInterval_t even         ;
+  int               BlankLineLen ; // Ticks
+  int               ActiveLineLen; // Ticks
+  int               HSyncLen     ; // Ticks
+} StandardCfg_t;
+
+typedef struct packed {
   Status_t      status;
   FrameCtrl_t   frame;
   BufferCtrl_t  buffer;
+  StandardCfg_t standard;
 } ADV7393RegBlock_t;
 
-localparam Reg_t LINES        = 576;
-localparam Reg_t LINE_LEN     = 640;
-localparam Reg_t FRAME_PHASES = 2;
+parameter Reg_t BASE         = 'h10000;
+parameter Reg_t LINE_STEP    = 'h1000;
+parameter Reg_t COUNT        = 2;
 
-localparam Reg_t BASE         = 'h10000;
-localparam Reg_t LINE_STEP    = 'h1000;
-localparam Reg_t COUNT        = 2;
+parameter BUFFER_DEPTH       = LINE_LEN/PIXELS_PER_SYMBOL;
+parameter BUFFER_COUNT       = COUNT;
+parameter BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
+parameter LINES_CNT_W        = $clog2(LINES);
 
-localparam BUFFER_DEPTH       = LINE_LEN/PIXELS_PER_SYMBOL;
-localparam BUFFER_COUNT       = 2;
-localparam BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
-localparam PHASE_W            = $clog2(FRAME_PHASES);
-localparam LINES_CNT_W        = $clog2(LINES);
+FrameCtrl_t frame_ctrl0 = '{ 640, 480 };
+FrameCtrl_t frame_ctrl1 = '{ 640, 512 };
+
+StandardCfg_t PAL625i = '{
+  625, 
+  768, 
+  '{ 23, 310 }, 
+  '{ 336, 623 },
+  352, 
+  1536, 
+  1
+};
 
 ADV7393RegBlock_t def_config = {
   '{ VERSION, '0 },
-  '{ LINE_LEN, LINES, FRAME_PHASES },
-  '{ BASE, LINE_STEP, COUNT }
+  frame_ctrl0,
+  '{ BASE, LINE_STEP, COUNT },
+  PAL625i
 };
 
 typedef struct packed {
@@ -67,9 +91,9 @@ typedef struct packed {
   logic [7:0] CbCr;
 } PixelStored_t;
 
-localparam PIXEL_SIZE         = $size(Pixel_t)/8;
-localparam PIXEL_STORED_SIZE  = $size(PixelStored_t)/8;
-localparam COMPRESSED_WIDTH   = PIXEL_STORED_SIZE*PIXELS_PER_SYMBOL;
+parameter PIXEL_SIZE         = $size(Pixel_t)/8;
+parameter PIXEL_STORED_SIZE  = $size(PixelStored_t)/8;
+parameter COMPRESSED_WIDTH   = PIXEL_STORED_SIZE*PIXELS_PER_SYMBOL;
 
 function PixelStored_t pixel_remove_dummy(Pixel_t pixel);
   PixelStored_t ret = '0;

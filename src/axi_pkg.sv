@@ -63,4 +63,12 @@ function logic [7:0] axiLen(AxiMasterRdCtrl_t ctrl, AxiSize_t size);
     axiLen = 8'(burstLenFloor + 1);
 endfunction
 
+function logic axiAccepted(logic valid, logic ready);
+  return valid && ready;
+endfunction
+
+function logic axiSuccess(AxiResp_t resp);
+  return (resp == AxiResp_t::OKAY) || (resp == AxiResp_t::EXOKAY);
+endfunction
+
 endpackage
