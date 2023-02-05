@@ -55,6 +55,8 @@ parameter Reg_t BASE         = 'h10000;
 parameter Reg_t LINE_STEP    = 'h1000;
 parameter Reg_t COUNT        = 2;
 
+parameter LINE_LEN           = 640;
+parameter LINES              = 625;
 parameter BUFFER_DEPTH       = LINE_LEN/PIXELS_PER_SYMBOL;
 parameter BUFFER_COUNT       = COUNT;
 parameter BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
@@ -64,13 +66,13 @@ FrameCtrl_t frame_ctrl0 = '{ 640, 480 };
 FrameCtrl_t frame_ctrl1 = '{ 640, 512 };
 
 StandardCfg_t PAL625i = '{
-  625, 
+  LINES, 
   768, 
   '{ 23, 310 }, 
   '{ 336, 623 },
   352, 
   1536, 
-  1
+  1 
 };
 
 ADV7393RegBlock_t def_config = {
