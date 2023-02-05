@@ -39,6 +39,7 @@ logic                  conv_read_d   ;
 logic [ MULT_CNTW-1:0] data_sel      ;
 logic [ MULT_CNTW-1:0] read_cnt      ;
 logic                  read_cnt_zero ;
+logic                  data_sel_zero ;
 logic [OUT_DWIDTH-1:0] conv_dout_muxo;
 
 delayreg #(.WIDTH(1), .DELAY(PIPELINE)) i0_delayreg (
@@ -60,6 +61,7 @@ i_mux (.data(fifo_dout), .sel(data_sel), .q(conv_dout_muxo));
 
 always_comb begin
   read_cnt_zero = (read_cnt == '0);
+  data_sel_zero = (data_sel == '0);
   fifo_read = conv_read && read_cnt_zero;
   conv_empty = fifo_empty && read_cnt_zero;
 end

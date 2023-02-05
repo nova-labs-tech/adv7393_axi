@@ -23,9 +23,9 @@ module adv7393_frame_ctrl (
   //!
   output logic                   m_axis_status_tvalid,
   input                          m_axis_status_tready,
-  output AxiMasterRdStatus_t     m_axis_status_tdata ,
-  output                         m_axis_status_tlast
+  output AxiMasterRdStatus_t     m_axis_status_tdata
 );
+
 
 
 
