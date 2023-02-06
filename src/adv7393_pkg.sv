@@ -35,13 +35,14 @@ typedef struct packed {
 } LineActInterval_t;
 
 typedef struct packed {
-  int               Lines        ;
-  int               PixelsPerLine;
-  LineActInterval_t odd          ;
-  LineActInterval_t even         ;
-  int               BlankLineLen ; // Ticks
-  int               ActiveLineLen; // Ticks
-  int               HSyncLen     ; // Ticks
+  int               Lines          ;
+  int               PixelsPerLine  ;
+  int               LineFieldChange;
+  LineActInterval_t Odd            ;
+  LineActInterval_t Even           ;
+  int               BlankLineLen   ; // Ticks
+  int               ActiveLineLen  ; // Ticks
+  int               HSyncLen       ; // Ticks
 } StandardCfg_t;
 
 typedef struct packed {
@@ -62,16 +63,25 @@ parameter BUFFER_COUNT       = COUNT;
 parameter BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
 parameter LINES_CNT_W        = $clog2(LINES);
 
+parameter LINE_LEN_ACT_T     = (1536);
+parameter LINE_LEN_BLANK_T   = (352);
+parameter LINE_LEN_T         = (LINE_LEN_BLANK_T + LINE_LEN_ACT_T);
+parameter LINE_LEN_CNT_W     = $clog2(LINE_LEN_T);
+parameter HSYNC_W            = 4;
+
+parameter OUT_DWIDTH         = 10;
+
 FrameCtrl_t frame_ctrl0 = '{ 640, 480 };
 FrameCtrl_t frame_ctrl1 = '{ 640, 512 };
 
 StandardCfg_t PAL625i = '{
   LINES, 
-  768, 
+  768,
+  313,
   '{ 23, 310 }, 
   '{ 336, 623 },
-  352, 
-  1536, 
+  LINE_LEN_BLANK_T, 
+  LINE_LEN_ACT_T, 
   1 
 };
 
@@ -92,6 +102,8 @@ typedef struct packed {
   logic [7:0] Y;
   logic [7:0] CbCr;
 } PixelStored_t;
+
+PixelStored_t blank_val = '{ 0, 0 };
 
 parameter PIXEL_SIZE         = $size(Pixel_t)/8;
 parameter PIXEL_STORED_SIZE  = $size(PixelStored_t)/8;
@@ -123,6 +135,5 @@ endfunction
 function logic [COMPRESSED_WIDTH-1:0] compress_data(logic [M_AXI_DWIDTH-1:0] data);
   compress_data = pixels2data(data2pixel(data));
 endfunction
-
 
 endpackage : adv7393_pkg

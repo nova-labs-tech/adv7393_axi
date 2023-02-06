@@ -14,8 +14,9 @@ module adv7393_frame_ctrl (
   input                          fb_write_rdy        ,
   //!
   input                          field               ,
-  input        [LINES_CNT_W-1:0] line                ,
-  input                          frame_ends          ,
+  input                          line_start          , 
+  input                          frame_start         ,
+  input                          frame_end           ,
   //!
   input                          s_axis_cmd_tvalid   ,
   output logic                   s_axis_cmd_tready   ,
@@ -26,7 +27,7 @@ module adv7393_frame_ctrl (
   output AxiMasterRdStatus_t     m_axis_status_tdata
 );
 
-
+typedef enum int { ST_IDLE, ST_BLANK_LINE,  } fsm_t;
 
 
 
