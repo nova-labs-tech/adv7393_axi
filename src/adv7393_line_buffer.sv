@@ -6,28 +6,28 @@ import adv7393_pkg::*;
 
 // It can be line buffer for everything after modification
 module adv7393_line_buffer (
-  input                                clk               ,
-  input                                rst               ,
+  input                                clk            ,
+  input                                rst            ,
   //!
-  output logic                         lb_read_rdy       ,
-  output logic                         lb_write_rdy      ,
+  output logic                         lb_read_rdy    ,
+  output logic                         lb_write_rdy   ,
   //!
-  input        [      AXIS_DWIDTH-1:0] s_axis_tdata      ,
-  input        [      AXIS_DWIDTH/8:0] s_axis_tkeep      ,
-  input                                s_axis_tlast      ,
-  input                                s_axis_tvalid     ,
-  output                               s_axis_tready     ,
+  input        [      AXIS_DWIDTH-1:0] s_axis_tdata   ,
+  input        [      AXIS_DWIDTH/8:0] s_axis_tkeep   ,
+  input                                s_axis_tlast   ,
+  input                                s_axis_tvalid  ,
+  output                               s_axis_tready  ,
   //!
-  output logic                         lb_exception      ,
+  output logic                         lb_exception   ,
   //! New Clock domain
-  input                                clk_pix           ,
+  input                                clk_pix        ,
   //!
-  output       [PIXEL_STORED_SIZE-1:0] line_buf_dout     ,
-  output                               line_buf_dval     ,
-  input                                line_buf_read     ,
-  output                               line_buf_empty    ,
+  output       [PIXEL_STORED_SIZE-1:0] line_buf_dout  ,
+  output                               line_buf_dval  ,
+  input                                line_buf_read  ,
+  output                               line_buf_empty ,
   //!
-  output                               lb_read_rdy_pix
+  output logic                         lb_read_rdy_pix
 );
 
 localparam DCFIFO_PIPELINE = 1;
@@ -40,8 +40,6 @@ logic [$clog2(BUFFER_SIZE)-1:0] fifo_usedr;
 logic                           fifo_full ;
 logic                           fifo_read ;
 logic                           fifo_empty;
-
-logic lb_read_rdy_pix;
 
 always_comb begin
   fifo_data       = compress_data(s_axis_tdata);

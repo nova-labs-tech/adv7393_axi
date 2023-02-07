@@ -43,11 +43,11 @@ module axi_master_rd #(
   input                          m_axis_status_tready,
   output AxiMasterRdStatus_t     m_axis_status_tdata ,
   //!
-  output       [AXIS_DWIDTH-1:0] m_axis_fifo_tdata   ,
-  output       [AXIS_DWIDTH/8:0] m_axis_fifo_tkeep   ,
-  output                         m_axis_fifo_tlast   ,
-  output                         m_axis_fifo_tvalid  ,
-  input                          m_axis_fifo_tready
+  output       [AXIS_DWIDTH-1:0] m_axis_tdata   ,
+  output       [AXIS_DWIDTH/8:0] m_axis_tkeep   ,
+  output                         m_axis_tlast   ,
+  output                         m_axis_tvalid  ,
+  input                          m_axis_tready
 );
 
 localparam VERSION = 0;
@@ -110,10 +110,10 @@ function logic axi_ar_accepted();
 endfunction
 
 task axi_r_accept_data();
-  m_axis_fifo_tdata     = m_axi_rdata;
-  m_axis_fifo_tlast     = m_axi_rlast;
-  m_axis_fifo_tvalid    = m_axi_rvalid;
-  m_axi_rready          = m_axis_fifo_tready;
+  m_axis_tdata     = m_axi_rdata;
+  m_axis_tlast     = m_axi_rlast;
+  m_axis_tvalid    = m_axi_rvalid;
+  m_axi_rready     = m_axis_tready;
 endtask
 
 always_comb begin

@@ -10,7 +10,6 @@ module adv7393_sync_gen
   //!
   input  ADV7393RegBlock_t       registers  ,
   //!
-  output logic                   line_active,
   output logic                   line_valid ,
   output logic [LINES_CNT_W-1:0] line       ,
   output logic                   frame_start,

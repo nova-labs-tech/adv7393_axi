@@ -1,5 +1,7 @@
 package adv7393_pkg;
 
+`include "macro.svh"
+
 // Параметры блока  
 parameter M_AXI_DWIDTH = 128;
 parameter S_AXI_DWIDTH = 32 ;
@@ -37,9 +39,8 @@ typedef struct packed {
 typedef struct packed {
   int               Lines          ;
   int               PixelsPerLine  ;
+  int               ActiveLines    ;
   int               LineFieldChange;
-  LineActInterval_t Odd            ;
-  LineActInterval_t Even           ;
   int               BlankLineLen   ; // Ticks
   int               ActiveLineLen  ; // Ticks
   int               HSyncLen       ; // Ticks
@@ -71,15 +72,14 @@ parameter HSYNC_W            = 4;
 
 parameter OUT_DWIDTH         = 10;
 
-FrameCtrl_t frame_ctrl0 = '{ 640, 480 };
-FrameCtrl_t frame_ctrl1 = '{ 640, 512 };
+FrameCtrl_t frame_ctrl0      = '{ 640, 480 };
+FrameCtrl_t frame_ctrl1      = '{ 640, 512 };
 
 StandardCfg_t PAL625i = '{
   LINES, 
   768,
+  576,
   313,
-  '{ 23, 310 }, 
-  '{ 336, 623 },
   LINE_LEN_BLANK_T, 
   LINE_LEN_ACT_T, 
   1 
@@ -134,6 +134,32 @@ endfunction
 
 function logic [COMPRESSED_WIDTH-1:0] compress_data(logic [M_AXI_DWIDTH-1:0] data);
   compress_data = pixels2data(data2pixel(data));
+endfunction
+
+function logic [31:0] line_offset(logic [31:0] frame_base, logic [LINES_CNT_W:0] line2read);
+  line_offset = frame_base + line2read*LINE_STEP;
+endfunction
+
+function logic [31:0] frame_base(ADV7393RegBlock_t regs, logic fb_sel);
+  frame_base = fb_sel ? regs.buffer.Base + regs.frame.Lines*LINE_STEP : regs.buffer.Base;
+endfunction
+
+function LineActInterval_t frame_align_center(ADV7393RegBlock_t registers);
+  frame_align_center.start  = (registers.standard.ActiveLines - registers.frame.Lines)/2;
+  frame_align_center.stop   = frame_align_center.start + registers.frame.Lines;
+endfunction
+
+function logic blank_line([LINES_CNT_W-1:0] line2read,  LineActInterval_t interval);
+  return `IN_RANGE_NN(line2read, interval.start, interval.stop);
+endfunction
+
+`REVERSE_VECTOR_FUNC(out, 16);
+
+function logic [15:0] pixel2out(PixelStored_t pixel, logic data_phase);
+  logic [15:0] value;
+  value = data_phase ? pixel.Y : pixel.CbCr;
+
+  return reverse_vector_out(value);
 endfunction
 
 endpackage : adv7393_pkg

@@ -7,43 +7,30 @@
 module adv7393_interface
   import adv7393_pkg::*;
 (
-  input                                clk_pixel     ,
-  input                                rst           ,
+  input                                clk_pixel       ,
+  input                                rst             ,
   //!
-  input  ADV7393RegBlock_t             registers     ,
+  input  ADV7393RegBlock_t             registers       ,
   //!
-  input                                fb_read_rdy   ,
+  input                                fb_read_rdy     ,
   //!
-  output logic                         field         ,
-  output logic                         line_start    ,
-  output logic [      LINES_CNT_W-1:0] line          ,
-  output logic                         frame_start   ,
-  output logic                         frame_end     ,
-  output logic                         line_start    ,
-  input                                blank_line    ,
+  output logic                         field           ,
+  output logic                         frame_start     ,
+  output logic                         frame_end       ,
+  input                                blank_line      ,
   //!
-  input        [PIXEL_STORED_SIZE-1:0] line_buf_dout ,
-  input                                line_buf_dval ,
-  output logic                         line_buf_read ,
-  input                                line_buf_empty,
+  input        [PIXEL_STORED_SIZE-1:0] line_buf_dout   ,
+  input                                line_buf_dval   ,
+  output logic                         line_buf_read   ,
+  input                                line_buf_empty  ,
   //!
-  output                               ic_clkin      ,
-  output                               ic_hsync      ,
-  output                               ic_vsync      ,
+  output                               ic_clkin        ,
+  output                               ic_hsync        ,
+  output                               ic_vsync        ,
   output logic [                 15:0] ic_data
 );
 
-`REVERSE_VECTOR_FUNC(out, 16);
-
-function logic [15:0] pixel2out(PixelStored_t pixel, logic data_phase);
-  logic [15:0] value;
-  value = data_phase ? pixel.Y : pixel.CbCr;
-
-  return reverse_vector_out(value);
-endfunction
-
 logic         hsync_n   ;
-logic         field     ;
 logic         data_phase;
 PixelStored_t pix       ;
 
@@ -51,7 +38,6 @@ adv7393_sync_gen i_adv7393_sync_gen (
   .clk            (clk_pixel  ),
   .rst            (rst        ),
   .registers      (registers  ),
-  .line_active    (line_active),
   .line_valid     (line_valid ),
   .line           (line       ),
   .frame_start    (frame_start)
