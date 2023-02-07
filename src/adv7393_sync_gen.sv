@@ -98,7 +98,7 @@ always_ff @(posedge clk or posedge rst) begin
           field_fsm <= ODD;
 
       end
-      default : field_fsm <= field_t::IDLE;
+      default : field_fsm <= IDLE;
     endcase
   end
 end

@@ -68,7 +68,7 @@ function logic axiAccepted(logic valid, logic ready);
 endfunction
 
 function logic axiSuccess(AxiResp_t resp);
-  return (resp == AxiResp_t::OKAY) || (resp == AxiResp_t::EXOKAY);
+  return (resp == OKAY) || (resp == EXOKAY);
 endfunction
 
 endpackage

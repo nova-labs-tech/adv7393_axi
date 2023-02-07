@@ -13,18 +13,18 @@ parameter PIXELS_PER_SYMBOL = 4 ;
 
 typedef logic [REG_WIDTH-1:0] Reg_t;
 
-typedef struct {
+typedef struct packed {
   Reg_t LineLength;   // Длина строчки в пикселях
   Reg_t Lines;        // Количество линий в фрейме
 } FrameCtrl_t;        // Настройка фрейма
 
-typedef struct {
+typedef struct packed {
   Reg_t Base;       // Базовый адрес буфера
   Reg_t LineStep;   // Шаг записи строки
   Reg_t Count;      // Количество кадров в буфере
 } BufferCtrl_t;     // Настройка буфера
 
-typedef struct {
+typedef struct packed {
   logic [7:0] version;  // Версия прошивки
   logic [23:0] dummy;
 } Status_t;
