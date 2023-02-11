@@ -20,7 +20,10 @@ module adv7393_sync_gen
   output logic                   field
 );
 
-`include "macro.svh"
+`define IN_RNG_SN(ITEM, LEFT, RIGHT) (((ITEM) > (LEFT)) && ((ITEM) <= (RIGHT)))
+`define IN_RNG_SS(ITEM, LEFT, RIGHT) (((ITEM) > (LEFT)) && ((ITEM) < (RIGHT)))
+`define IN_RNG_NS(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) < (RIGHT)))
+`define IN_RNG_NN(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) <= (RIGHT)))
 
 typedef enum int { IDLE = 0, ODD, EVEN } field_t;
 //!

@@ -1,7 +1,5 @@
 package axi_pkg;
 
-`include "macro.svh"
-
 // Read this for information
 // AMBA® AXI and ACE Protocol Specification
 
@@ -19,7 +17,7 @@ typedef enum logic [2:0] {
 typedef enum logic [1:0] {
   FIXED = 0,
   INCR,
-  WRAP,
+  WRAP
 } AxiBurst_t;
 
 typedef enum logic [1:0] {
@@ -50,14 +48,14 @@ function int axiSize2bytes(AxiSize_t size);
 endfunction
 
 function bit addressAligned(logic [31:0] address, AxiSize_t size);
-  address_aligned = bit'(`ALIGNED(address, size));
+  addressAligned = bit'(((((address) % (size)) == 0) ? 1 : 0));
 endfunction
 
 function logic [7:0] axiLen(AxiMasterRdCtrl_t ctrl, AxiSize_t size);
-  axiLen = '0;
-  int transSizeInBytes = axiSize2bytes(size);
+  int transSizeInBytes = axiSize2bytes(size); 
   int burstLenFloor = int'(ctrl.bytes) / transSizeInBytes - 1;
-  if(!`ALIGNED(ctrl.bytes, transSizeInBytes))
+  axiLen = '0;
+  if(!((((ctrl.bytes) % (size)) == 0) ? 1 : 0))
     axiLen = 8'(burstLenFloor);
   else 
     axiLen = 8'(burstLenFloor + 1);

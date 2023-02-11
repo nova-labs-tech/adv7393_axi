@@ -67,3 +67,425 @@
 [EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:110)
 [EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:113)
 [EFX-0011 VERI-WARNING] use of undefined macro 'ALIGNED' (VERI-1158) (D:\Work\adv7393_axi\src\axi_pkg.sv:53)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 07:54:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 07:57:54
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'REVERSE_VECTOR_FUNC' (VERI-1158) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:10)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:13)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:14)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:57)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:64)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:70)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:73)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:109)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:110)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:113)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 07:58:18
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'REVERSE_VECTOR_FUNC' (VERI-1158) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:10)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:13)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:14)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:57)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:64)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:70)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:73)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:109)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:110)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (d:\Work\adv7393_axi\src\adv7393_pkg.sv:113)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:05:49
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'REVERSE_VECTOR_FUNC' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:10)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:13)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:14)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:57)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:64)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:70)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:73)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:109)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:110)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:113)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:17:26
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'REVERSE_VECTOR_FUNC' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:10)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:13)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:14)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:57)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:64)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:70)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:73)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:109)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:110)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:113)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:20:37
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'REVERSE_VECTOR_FUNC' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:10)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:13)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:14)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:57)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:64)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:70)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:73)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:109)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:110)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:113)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:23:18
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'out' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:23:39
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:93)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:153)
+[EFX-0011 VERI-WARNING] use of undefined macro 'out' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:31:20
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0011 VERI-WARNING] use of undefined macro 'IN_RANGE_NN' (VERI-1158) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:156)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:4)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:5)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:12)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:54)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:55)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:59)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:66)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:106)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:107)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:111)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:160)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:33:25
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:4)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:5)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:12)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:54)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:55)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:59)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:66)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:106)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:107)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:111)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:160)
+[EFX-0011 VERI-WARNING] use of undefined macro 'ALIGNED' (VERI-1158) (D:\Work\adv7393_axi\src\axi_pkg.sv:51)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 08:59:29
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:4)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:5)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:12)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:54)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:55)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:59)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:66)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:106)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:107)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:111)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:160)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 09:00:35
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:4)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:5)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:12)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:54)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:55)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:59)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:66)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:106)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:107)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:111)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:160)
+[EFX-0011 VERI-WARNING] variable 'transSizeInBytes' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\axi_pkg.sv:55)
+[EFX-0011 VERI-WARNING] variable 'burstLenFloor' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\axi_pkg.sv:56)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 09:01:19
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:4)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:5)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:12)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:54)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:55)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:59)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:66)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:106)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:107)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:111)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:160)
+[EFX-0011 VERI-WARNING] variable 'transSizeInBytes' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\axi_pkg.sv:55)
+[EFX-0011 VERI-WARNING] variable 'burstLenFloor' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\axi_pkg.sv:56)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 11, 2023 09:01:36
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0011 VERI-WARNING] parameter 'M_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:4)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:5)
+[EFX-0011 VERI-WARNING] parameter 'S_AXI_AWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:6)
+[EFX-0011 VERI-WARNING] parameter 'CSR_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:7)
+[EFX-0011 VERI-WARNING] parameter 'TEST_ENABLE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:8)
+[EFX-0011 VERI-WARNING] parameter 'VERSION' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:9)
+[EFX-0011 VERI-WARNING] parameter 'REG_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:11)
+[EFX-0011 VERI-WARNING] parameter 'PIXELS_PER_SYMBOL' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:12)
+[EFX-0011 VERI-WARNING] parameter 'BASE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:54)
+[EFX-0011 VERI-WARNING] parameter 'LINE_STEP' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:55)
+[EFX-0011 VERI-WARNING] parameter 'COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:56)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:58)
+[EFX-0011 VERI-WARNING] parameter 'LINES' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:59)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_DEPTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:60)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_COUNT' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:61)
+[EFX-0011 VERI-WARNING] parameter 'BUFFER_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:62)
+[EFX-0011 VERI-WARNING] parameter 'LINES_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:63)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_ACT_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:65)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_BLANK_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:66)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_T' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:67)
+[EFX-0011 VERI-WARNING] parameter 'LINE_LEN_CNT_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:68)
+[EFX-0011 VERI-WARNING] parameter 'HSYNC_W' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:69)
+[EFX-0011 VERI-WARNING] parameter 'OUT_DWIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:71)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:106)
+[EFX-0011 VERI-WARNING] parameter 'PIXEL_STORED_SIZE' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:107)
+[EFX-0011 VERI-WARNING] parameter 'COMPRESSED_WIDTH' declared inside package 'adv7393_pkg' shall be treated as localparam (VERI-2418) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:108)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:111)
+[EFX-0011 VERI-WARNING] variable 'ret' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:160)
+[EFX-0011 VERI-WARNING] variable 'transSizeInBytes' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\axi_pkg.sv:55)
+[EFX-0011 VERI-WARNING] variable 'burstLenFloor' must explicitly be declared as automatic or static (VERI-2013) (D:\Work\adv7393_axi\src\axi_pkg.sv:56)

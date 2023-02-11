@@ -1,7 +1,5 @@
 package adv7393_pkg;
 
-`include "macro.svh"
-
 // Параметры блока  
 parameter M_AXI_DWIDTH = 128;
 parameter S_AXI_DWIDTH = 32 ;
@@ -149,11 +147,22 @@ function LineActInterval_t frame_align_center(ADV7393RegBlock_t registers);
   frame_align_center.stop   = frame_align_center.start + registers.frame.Lines;
 endfunction
 
+`define IN_RNG_SN(ITEM, LEFT, RIGHT) (((ITEM) > (LEFT)) && ((ITEM) <= (RIGHT)))
+`define IN_RNG_SS(ITEM, LEFT, RIGHT) (((ITEM) > (LEFT)) && ((ITEM) < (RIGHT)))
+`define IN_RNG_NS(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) < (RIGHT)))
+`define IN_RNG_NN(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) <= (RIGHT)))
+
 function logic blank_line([LINES_CNT_W-1:0] line2read,  LineActInterval_t interval);
-  return `IN_RANGE_NN(line2read, interval.start, interval.stop);
+  return (((line2read) >= (interval.start)) && ((line2read) <= (interval.stop)));
 endfunction
 
-`REVERSE_VECTOR_FUNC(out, 16);
+function logic [15:0] reverse_vector_out(input logic [15:0] din);
+    logic [15:0] ret = '0;        
+    for (int i = 0; i < $size(din); i++) begin
+        ret[i] = din[$size(din)-1-i];
+    end
+    return ret;
+endfunction
 
 function logic [15:0] pixel2out(PixelStored_t pixel, logic data_phase);
   logic [15:0] value;

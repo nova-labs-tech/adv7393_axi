@@ -20,7 +20,8 @@ module fifo_rd_dconv #(
   output logic                   conv_empty
 );
 
-`include "macro.svh"
+`define MAX(FIRST, SECOND) (((FIRST) > (SECOND)) ? (FIRST) : (SECOND))
+`define MIN(FIRST, SECOND) (((FIRST) > (SECOND)) ? (SECOND) : (FIRST))
 
 localparam MULTIPLE  = `MAX(FIFO_DWIDTH, OUT_DWIDTH)/`MIN(FIFO_DWIDTH, OUT_DWIDTH);
 localparam PIPE_CNTW = $clog2(PIPELINE)                                           ;

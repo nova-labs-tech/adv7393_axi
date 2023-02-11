@@ -2,9 +2,7 @@
 `timescale 1 ns / 1 ns
 // synopsys translate_on
 
-import adv7393_pkg::*
-
-module adv7393_top (
+module adv7393_top import adv7393_pkg::*; (
   input                     clk           ,
   input                     rst           ,
   //!
@@ -122,10 +120,6 @@ adv7393_line_buffer i_adv7393_line_buffer (
   .lb_read_rdy_pix(lb_read_rdy_pix)
 );
 
-
-  logic aclk;
-  logic areset_n;
-
 axi_master_rd #(
   .AXI_DWIDTH (M_AXI_DWIDTH),
   .AXI_AWIDTH (32          ),
@@ -168,9 +162,6 @@ logic [AXIS_DWIDTH/8:0] s_axis_tkeep   ;
 logic                   s_axis_tlast   ;
 logic                   s_axis_tvalid  ;
 logic                   s_axis_tready  ;
-
-
-
 
 endmodule
 

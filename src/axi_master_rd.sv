@@ -2,11 +2,9 @@
 `timescale 1 ns / 1 ns
 // synopsys translate_on
 
-import axi_pkg::*;
-
 // It will be Xilinx AXI Datamover full analog
 
-module axi_master_rd #(
+module axi_master_rd import axi_pkg::*; #(
   parameter AXI_DWIDTH  = 128       ,
   parameter AXI_AWIDTH  = 32        ,
   parameter AXI_IDWIDTH = 1         ,
