@@ -52,13 +52,13 @@ function bit addressAligned(logic [31:0] address, AxiSize_t size);
 endfunction
 
 function logic [7:0] axiLen(AxiMasterRdCtrl_t ctrl, AxiSize_t size);
-  int transSizeInBytes = axiSize2bytes(size); 
-  int burstLenFloor = int'(ctrl.bytes) / transSizeInBytes - 1;
-  axiLen = '0;
+  logic [7:0] ret;
+  int burstLenFloor = int'(ctrl.bytes) / axiSize2bytes(size);
   if(!((((ctrl.bytes) % (size)) == 0) ? 1 : 0))
-    axiLen = 8'(burstLenFloor);
+    ret = 8'(burstLenFloor);
   else 
-    axiLen = 8'(burstLenFloor + 1);
+    ret = 8'(burstLenFloor + 1);
+  return ret; 
 endfunction
 
 function logic axiAccepted(logic valid, logic ready);

@@ -11,7 +11,7 @@ module fifo_rd_dconv #(
   input                          rst       ,
   //! FIFO read interface (normal fifo)
   input        [FIFO_DWIDTH-1:0] fifo_dout ,
-  output                         fifo_read ,
+  output logic                   fifo_read ,
   input                          fifo_empty,
   //! Converted DWIDTH
   output logic [ OUT_DWIDTH-1:0] conv_dout ,

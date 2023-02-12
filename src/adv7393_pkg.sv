@@ -11,6 +11,8 @@ parameter VERSION      = 0  ;
 parameter REG_WIDTH         = 32;
 parameter PIXELS_PER_SYMBOL = 4 ;
 
+parameter AXIS_DWIDTH = M_AXI_DWIDTH;
+
 typedef logic [REG_WIDTH-1:0] Reg_t;
 
 typedef struct packed {
@@ -103,8 +105,8 @@ typedef struct packed {
 
 PixelStored_t blank_val = '{ 0, 0 };
 
-parameter PIXEL_SIZE         = $size(Pixel_t)/8;
-parameter PIXEL_STORED_SIZE  = $size(PixelStored_t)/8;
+parameter PIXEL_SIZE         = $size(Pixel_t);
+parameter PIXEL_STORED_SIZE  = $size(PixelStored_t);
 parameter COMPRESSED_WIDTH   = PIXEL_STORED_SIZE*PIXELS_PER_SYMBOL;
 
 function PixelStored_t pixel_remove_dummy(Pixel_t pixel);

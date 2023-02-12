@@ -34,7 +34,9 @@ module adv7393_top import adv7393_pkg::*; (
   output                    m_axi_rready
 );
 
-adv7393_pkg::def_config regs;
+ADV7393RegBlock_t regs;
+
+always_comb regs = adv7393_pkg::def_config;
 
 logic                   lb_write_rdy        ;
 logic                   field               ;

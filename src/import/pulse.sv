@@ -1,5 +1,6 @@
 module pulse #(parameter WIDTH = 2) (
   input        clk   ,
+  input        rst   ,
   input        ena   ,
   input        str   ,
   output logic pulseo

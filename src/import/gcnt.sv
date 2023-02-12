@@ -15,12 +15,12 @@ logic q_msb;  // q_msb is a modification to make the msb logic work
 always_ff @ (posedge aclr or posedge clk) begin
 	if (aclr) begin
 		q[-1] <= 1;  // Resetting involves setting the imaginary bit to 1
-		for (i = 0; i <= WIDTH-1; i++) q[i] <= '0;
+		for (int i = 0; i <= WIDTH-1; i++) q[i] <= '0;
 	end
 	else if (ena) begin
 		q[-1] <= ~q[-1];   // Toggle the imaginary bit
 		
-		for (i = 0; i < WIDTH-1; i++)
+		for (int i = 0; i < WIDTH-1; i++)
 			q[i] <= q[i] ^ (q[i-1] & no_ones_below[i-1]); // Flip q[i] if lower bits are a 1 followed by all 0's
 		
 		q[WIDTH-1] <= q[WIDTH-1] ^ (q_msb & no_ones_below[WIDTH-2]);

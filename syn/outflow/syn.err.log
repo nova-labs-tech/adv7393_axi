@@ -220,3 +220,393 @@
 [EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'default' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:108)
 [EFX-0010 VERI-ERROR] syntax error near 'endcase' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:111)
 [EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'endcase' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:111)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:31:37
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'line_offset' is not declared under prefix 'axi_pkg' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:66)
+[EFX-0010 VERI-ERROR] 'frame_base' is not declared under prefix 'axi_pkg' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:67)
+[EFX-0010 VERI-ERROR] 'frame_align_center' is not declared under prefix 'axi_pkg' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:68)
+[EFX-0010 VERI-ERROR] 'blank_line' is not declared under prefix 'axi_pkg' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:69)
+[EFX-0010 VERI-ERROR] syntax error near 'default' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:108)
+[EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'default' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:108)
+[EFX-0010 VERI-ERROR] syntax error near 'endcase' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:111)
+[EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'endcase' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:111)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:35:20
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'default' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:108)
+[EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'default' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:108)
+[EFX-0010 VERI-ERROR] syntax error near 'endcase' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:111)
+[EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'endcase' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:111)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:36:30
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'blank_line' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:69)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_status_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:80)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_status_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:96)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_status_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:101)
+[EFX-0010 VERI-ERROR] module 'adv7393_frame_ctrl' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:118)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:37:23
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_status_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:80)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_status_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:96)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_status_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:101)
+[EFX-0010 VERI-ERROR] module 'adv7393_frame_ctrl' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:118)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:38:14
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '.' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_interface.sv:44)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'ic_clkin' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_interface.sv:61)
+[EFX-0010 VERI-ERROR] module 'adv7393_interface' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_interface.sv:76)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:38:47
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'AXIS_DWIDTH' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:15)
+[EFX-0010 VERI-ERROR] range must be bounded by constant expressions (VERI-1952) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:15)
+[EFX-0010 VERI-ERROR] 'AXIS_DWIDTH' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:16)
+[EFX-0010 VERI-ERROR] range must be bounded by constant expressions (VERI-1952) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:16)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 's_axis_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:49)
+[EFX-0010 VERI-ERROR] module 'adv7393_line_buffer' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:93)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:39:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 's_axis_tready' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:49)
+[EFX-0010 VERI-ERROR] module 'adv7393_line_buffer' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:93)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:40:33
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:79)
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:86)
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:87)
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:95)
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:96)
+[EFX-0010 VERI-ERROR] 'line_active' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:73)
+[EFX-0010 VERI-ERROR] module 'adv7393_sync_gen' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:108)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 07:42:59
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:79)
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:86)
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:87)
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:95)
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:96)
+[EFX-0010 VERI-ERROR] 'line_active' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:73)
+[EFX-0010 VERI-ERROR] module 'adv7393_sync_gen' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:108)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:15:20
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'line_active' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:73)
+[EFX-0010 VERI-ERROR] 'line_active' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:86)
+[EFX-0010 VERI-ERROR] 'line_active' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:95)
+[EFX-0010 VERI-ERROR] module 'adv7393_sync_gen' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:108)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:16:04
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'def_config' is not a type (VERI-1281) (D:\Work\adv7393_axi\src\adv7393_top.sv:37)
+[EFX-0010 VERI-ERROR] module 'adv7393_top' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_top.sv:166)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:17:28
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'input' (VERI-1137) (D:\Work\adv7393_axi\src\axi_master_rd.sv:36)
+[EFX-0010 VERI-ERROR] SystemVerilog 2009 keyword 'input' used in incorrect context (VERI-2344) (D:\Work\adv7393_axi\src\axi_master_rd.sv:36)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:17:56
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'AxiSize_t' is not a valid package or class type prefix for '::' (VERI-1677) (D:\Work\adv7393_axi\src\axi_master_rd.sv:90)
+[EFX-0010 VERI-ERROR] 'AxiSize_t' is not a valid package or class type prefix for '::' (VERI-1677) (D:\Work\adv7393_axi\src\axi_master_rd.sv:91)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_tdata' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\axi_master_rd.sv:113)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_tlast' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\axi_master_rd.sv:114)
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'm_axis_tvalid' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\axi_master_rd.sv:115)
+[EFX-0010 VERI-ERROR] 'clk' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\axi_master_rd.sv:125)
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\axi_master_rd.sv:126)
+[EFX-0010 VERI-ERROR] port 'ctrl' is not connected on task call 'axis_status_send' (VERI-1266) (D:\Work\adv7393_axi\src\axi_master_rd.sv:166)
+[EFX-0010 VERI-ERROR] module 'axi_master_rd' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\axi_master_rd.sv:177)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:19:18
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'AxiSize_t' is not a valid package or class type prefix for '::' (VERI-1677) (D:\Work\adv7393_axi\src\axi_master_rd.sv:90)
+[EFX-0010 VERI-ERROR] 'AxiSize_t' is not a valid package or class type prefix for '::' (VERI-1677) (D:\Work\adv7393_axi\src\axi_master_rd.sv:91)
+[EFX-0010 VERI-ERROR] 'clk' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\axi_master_rd.sv:125)
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\axi_master_rd.sv:126)
+[EFX-0010 VERI-ERROR] port 'ctrl' is not connected on task call 'axis_status_send' (VERI-1266) (D:\Work\adv7393_axi\src\axi_master_rd.sv:166)
+[EFX-0010 VERI-ERROR] module 'axi_master_rd' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\axi_master_rd.sv:177)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:20:21
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'AxiSize_t' is not a valid package or class type prefix for '::' (VERI-1677) (D:\Work\adv7393_axi\src\axi_master_rd.sv:90)
+[EFX-0010 VERI-ERROR] 'AxiSize_t' is not a valid package or class type prefix for '::' (VERI-1677) (D:\Work\adv7393_axi\src\axi_master_rd.sv:91)
+[EFX-0010 VERI-ERROR] port 'ctrl' is not connected on task call 'axis_status_send' (VERI-1266) (D:\Work\adv7393_axi\src\axi_master_rd.sv:166)
+[EFX-0010 VERI-ERROR] module 'axi_master_rd' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\axi_master_rd.sv:177)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:20:41
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] port 'ctrl' is not connected on task call 'axis_status_send' (VERI-1266) (D:\Work\adv7393_axi\src\axi_master_rd.sv:166)
+[EFX-0010 VERI-ERROR] module 'axi_master_rd' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\axi_master_rd.sv:177)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:21:24
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] procedural assignment to a non-register 'fifo_read' is not permitted (VERI-1100) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:66)
+[EFX-0010 VERI-ERROR] module 'fifo_rd_dconv' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:88)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:22:00
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'latch' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\jksync.sv:26)
+[EFX-0010 VERI-ERROR] module 'jksync' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\import\jksync.sv:35)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:22:52
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'WIDTH' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\bus_edet.sv:5)
+[EFX-0010 VERI-ERROR] range must be bounded by constant expressions (VERI-1952) (D:\Work\adv7393_axi\src\import\bus_edet.sv:5)
+[EFX-0010 VERI-ERROR] 'WIDTH' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\bus_edet.sv:9)
+[EFX-0010 VERI-ERROR] range must be bounded by constant expressions (VERI-1952) (D:\Work\adv7393_axi\src\import\bus_edet.sv:9)
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\bus_edet.sv:11)
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\bus_edet.sv:12)
+[EFX-0010 VERI-ERROR] module 'bus_edet' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\import\bus_edet.sv:17)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:23:11
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\bus_edet.sv:11)
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\bus_edet.sv:12)
+[EFX-0010 VERI-ERROR] module 'bus_edet' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\import\bus_edet.sv:17)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:23:34
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'i' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\gcnt.sv:18)
+[EFX-0010 VERI-ERROR] 'i' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\gcnt.sv:23)
+[EFX-0010 VERI-ERROR] 'i' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\gcnt.sv:24)
+[EFX-0010 VERI-ERROR] module 'gcnt' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\import\gcnt.sv:43)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:24:55
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\pulse.sv:16)
+[EFX-0010 VERI-ERROR] 'rst' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\import\pulse.sv:17)
+[EFX-0010 VERI-ERROR] module 'pulse' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\import\pulse.sv:39)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:25:34
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'i_esync' is already declared (VERI-1116) (D:\Work\adv7393_axi\src\import\dsync.sv:35)
+[EFX-0010 VERI-ERROR] module 'dsync' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\import\dsync.sv:41)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:26:00
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'pdet' (VERI-1063) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:60)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'delayreg' (VERI-1063) (D:\Work\adv7393_axi\src\adv7393_interface.sv:55)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'bcnt' (VERI-1063) (D:\Work\adv7393_axi\src\import\dcfifo.sv:64)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'delayreg' (VERI-1063) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:52)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'jkl' (VERI-1063) (D:\Work\adv7393_axi\src\import\jksync.sv:19)
+[EFX-0021 ERROR] Verific elaboration of module 'bcntsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:28:47
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] net 'line_per_field' is constantly driven from multiple places (VDB-1000) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:56)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:58)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:59)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'dpram' (VERI-1063) (D:\Work\adv7393_axi\src\import\dcfifo.sv:96)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'mux' (VERI-1063) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'bcntsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:30:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] net 'line_per_field' is constantly driven from multiple places (VDB-1000) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:56)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:58)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:59)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'dpram' (VERI-1063) (D:\Work\adv7393_axi\src\import\dcfifo.sv:96)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'bcntsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:32:20
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:59)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'dpram' (VERI-1063) (D:\Work\adv7393_axi\src\import\dcfifo.sv:96)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'bcntsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:33:29
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:59)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'fifo_rd_dwidth_conv' (VERI-1063) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:91)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:35:05
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:61)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'fifo_rd_dwidth_conv' (VERI-1063) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:91)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:35:31
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:61)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:37:30
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:39:34
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 12, 2023 08:40:40
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.

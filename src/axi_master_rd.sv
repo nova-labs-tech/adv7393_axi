@@ -4,7 +4,9 @@
 
 // It will be Xilinx AXI Datamover full analog
 
-module axi_master_rd import axi_pkg::*; #(
+module axi_master_rd
+  import axi_pkg::*;
+#(
   parameter AXI_DWIDTH  = 128       ,
   parameter AXI_AWIDTH  = 32        ,
   parameter AXI_IDWIDTH = 1         ,
@@ -31,7 +33,7 @@ module axi_master_rd import axi_pkg::*; #(
   input        [            1:0] m_axi_rresp         ,
   input                          m_axi_rlast         ,
   input                          m_axi_rvalid        ,
-  output logic                   m_axi_rready
+  output logic                   m_axi_rready        ,
   //!
   input                          s_axis_cmd_tvalid   ,
   output logic                   s_axis_cmd_tready   ,
@@ -41,10 +43,10 @@ module axi_master_rd import axi_pkg::*; #(
   input                          m_axis_status_tready,
   output AxiMasterRdStatus_t     m_axis_status_tdata ,
   //!
-  output       [AXIS_DWIDTH-1:0] m_axis_tdata   ,
-  output       [AXIS_DWIDTH/8:0] m_axis_tkeep   ,
-  output                         m_axis_tlast   ,
-  output                         m_axis_tvalid  ,
+  output logic [AXIS_DWIDTH-1:0] m_axis_tdata        ,
+  output logic [AXIS_DWIDTH/8:0] m_axis_tkeep        ,
+  output logic                   m_axis_tlast        ,
+  output logic                   m_axis_tvalid       ,
   input                          m_axis_tready
 );
 
@@ -85,12 +87,12 @@ endtask
 task axi_ar_send(AxiMasterRdCtrl_t ctrl);
   m_axi_arid    <= m_axi_arid + 1'b1;
   m_axi_araddr  <= ctrl.address;
-  m_axi_arlen   <= axi_pkg::axiLen(ctrl, axi_pkg::AxiSize_t::SIZE_16);
-  m_axi_arsize  <= axi_pkg::AxiSize_t::SIZE_16;
+  m_axi_arlen   <= axi_pkg::axiLen(ctrl, SIZE_16);
+  m_axi_arsize  <= SIZE_16;
   m_axi_arvalid <= '1;
 endtask
 
-task axis_status_send(AxiMasterRdCtrl_t ctrl);
+task axis_status_send();
   m_axis_status_tvalid  <= '1;
   m_axis_status_tdata   <= status;
 endtask
@@ -120,8 +122,8 @@ always_comb begin
   axi_r_accept_data();
 end
 
-always_ff @(posedge clk or posedge rst) begin
-  if(rst) begin
+always_ff @(posedge aclk or negedge areset_n) begin
+  if(!areset_n) begin
     ctrl              <= '0;
     s_axis_cmd_tready <= '1;
     fsm               <= ST_IDLE;

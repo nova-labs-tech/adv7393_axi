@@ -23,7 +23,7 @@ logic sync_reg_d;
 // Sync chain
 always_ff @(posedge clko, posedge rst)
   if(rst) sync_reg <= '0;
-  else sync_reg <= { sync_reg[LEN - 2:0], latch };
+  else sync_reg <= { sync_reg[LEN - 2:0], reset_latch };
 
 always_ff @(posedge clko, posedge rst)
   if(rst) sync_reg_d <= '0;

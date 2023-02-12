@@ -5,27 +5,27 @@
 module adv7393_frame_ctrl
   import adv7393_pkg::*; import axi_pkg::*;
 (
-  input                          clk                 ,
-  input                          rst                 ,
+  input                      clk                 ,
+  input                      rst                 ,
   //!
-  input  ADV7393RegBlock_t       registers           ,
-  input                          fb_sel              ,
+  input  ADV7393RegBlock_t   registers           ,
+  input                      fb_sel              ,
   //!
-  input                          lb_write_rdy        ,
+  input                      lb_write_rdy        ,
   //!
-  input                          field               ,
-  input                          line_start          ,
-  input                          frame_start         ,
-  input                          frame_end           ,
-  output                         blank_line          ,
+  input                      field               ,
+  input                      line_start          ,
+  input                      frame_start         ,
+  input                      frame_end           ,
+  output logic               blank_line          ,
   //!
-  output logic                   s_axis_cmd_tvalid   ,
-  input                          s_axis_cmd_tready   ,
-  output  AxiMasterRdCtrl_t      s_axis_cmd_tdata    ,
+  output logic               s_axis_cmd_tvalid   ,
+  input                      s_axis_cmd_tready   ,
+  output AxiMasterRdCtrl_t   s_axis_cmd_tdata    ,
   //!
-  input logic                    m_axis_status_tvalid,
-  output                         m_axis_status_tready,
-  input AxiMasterRdStatus_t      m_axis_status_tdata
+  input  logic               m_axis_status_tvalid,
+  output logic               m_axis_status_tready,
+  input  AxiMasterRdStatus_t m_axis_status_tdata
 );
 
 typedef enum int { 
@@ -54,8 +54,6 @@ LineActInterval_t center_align;
 
 bcnts #(.MAX(LINES-1)) 
 i0_bcnts (.clk(clk), .aclr(frame_start), .ena(next_line), .dir('1), .q(line_per_field));
-bcnts #(.MAX(LINES-1)) 
-i1_bcnts (.clk(clk), .aclr(frame_start), .ena(line_ends), .dir('1), .q(line_per_field));
 
 pdet i_pdet (.clk(clk), .in(next_line_in), .out(out));
 
@@ -63,10 +61,10 @@ always_comb begin
   line2read = { line2read_wo_field, field };
 
   req_size     = registers.frame.LineLength*PIXEL_SIZE;
-  line_offset  = axi_pkg::line_offset(frame_base, line2read);
-  frame_base   = axi_pkg::frame_base(registers, fb_sel);
-  center_align = axi_pkg::frame_align_center(registers);
-  blank_line   = axi_pkg::blank_line(line, center_align);
+  line_offset  = adv7393_pkg::line_offset(frame_base, line2read);
+  frame_base   = adv7393_pkg::frame_base(registers, fb_sel);
+  center_align = adv7393_pkg::frame_align_center(registers);
+  blank_line   = adv7393_pkg::blank_line(line, center_align);
 
   s_axis_cmd_tdata = cmd;
   next_line_in     = (fsm == ST_CHECK_LINE_BUFFER) && lb_write_rdy;
@@ -105,12 +103,13 @@ always_ff @(posedge clk or posedge rst) begin
       ST_WAIT_LINE_END     : begin
         if(frame_end)
           fsm <= ST_IDLE;
+      end
       default : begin
         fsm <= ST_IDLE;
       end
-      endcase
-    end
-  end
+    endcase
+  end 
+end 
 
 
 

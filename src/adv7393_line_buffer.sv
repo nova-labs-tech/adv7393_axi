@@ -16,7 +16,7 @@ module adv7393_line_buffer (
   input        [      AXIS_DWIDTH/8:0] s_axis_tkeep   ,
   input                                s_axis_tlast   ,
   input                                s_axis_tvalid  ,
-  output                               s_axis_tready  ,
+  output logic                         s_axis_tready  ,
   //!
   output logic                         lb_exception   ,
   //! New Clock domain
@@ -72,7 +72,7 @@ dcfifo #(
   .clkhalt(clkhalt      )
 );
 
-fifo_rd_dwidth_conv #(
+fifo_rd_dconv #(
   .FIFO_DWIDTH(COMPRESSED_WIDTH ),
   .OUT_DWIDTH (PIXEL_STORED_SIZE),
   .PIPELINE   (DCFIFO_PIPELINE  )

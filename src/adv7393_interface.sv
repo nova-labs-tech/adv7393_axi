@@ -24,7 +24,7 @@ module adv7393_interface
   output logic                         line_buf_read   ,
   input                                line_buf_empty  ,
   //!
-  output                               ic_clkin        ,
+  output logic                         ic_clkin        ,
   output                               ic_hsync        ,
   output                               ic_vsync        ,
   output logic [                 15:0] ic_data
@@ -33,6 +33,7 @@ module adv7393_interface
 logic         hsync_n   ;
 logic         data_phase;
 PixelStored_t pix       ;
+PixelStored_t from_data ;
 
 adv7393_sync_gen i_adv7393_sync_gen (
   .clk            (clk_pixel  ),
@@ -40,7 +41,7 @@ adv7393_sync_gen i_adv7393_sync_gen (
   .registers      (registers  ),
   .line_valid     (line_valid ),
   .line           (line       ),
-  .frame_start    (frame_start)
+  .frame_start    (frame_start),
   .frame_end      (frame_end  ),
   .hsync_n        (hsync_n    ),
   .field          (field      )
@@ -54,11 +55,13 @@ delayreg #(.WIDTH(2), .DELAY(4)) i_delayreg (
   .delay  ({ic_hsync, ic_vsync})
 );
 
-always_comb begin
-  if (blank_line || !line_valid) pix = blank_val;
-  else pix = PixelStored_t'(line_buf_dout);    
+assign ic_clkin = clk_pixel;
 
-  ic_clkin = clk_pixel;
+always_comb begin
+  from_data = line_buf_dout;
+  if (blank_line || !line_valid) pix = blank_val;
+  else pix = from_data;    
+
   line_buf_read = line_valid && !data_phase;
 end
 

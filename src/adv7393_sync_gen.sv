@@ -11,6 +11,7 @@ module adv7393_sync_gen
   input  ADV7393RegBlock_t       registers  ,
   //!
   output logic                   line_valid ,
+  output logic                   line_active,
   output logic [LINES_CNT_W-1:0] line       ,
   output logic                   frame_start,
   output logic                   frame_end  ,
@@ -25,7 +26,7 @@ module adv7393_sync_gen
 `define IN_RNG_NS(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) < (RIGHT)))
 `define IN_RNG_NN(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) <= (RIGHT)))
 
-typedef enum int { IDLE = 0, ODD, EVEN } field_t;
+typedef enum logic [1:0] { IDLE = 0, ODD, EVEN } field_t;
 //!
 logic                      pulseo   ;
 //!
@@ -76,15 +77,15 @@ always_ff @(posedge clk or posedge rst) begin
   end else begin
     line_start <= line_ends;
 
-    line_valid <= `IN_RANGE_NN(line_cnt, actLineStart, activeLineStop);
+    line_valid <= `IN_RNG_NN(line_cnt, actLineStart, activeLineStop);
     
     case(field_fsm)
       IDLE: begin
         field_fsm <= ODD;
       end
       ODD : begin
-        line_active <= `IN_RANGE_NN(line, registers.standard.Odd.start, 
-                                          registers.standard.Odd.stop);
+        line_active <= `IN_RNG_NN(line, registers.standard.Odd.start, 
+                                        registers.standard.Odd.stop);
         field <= '1;
 
         if(line >= registers.standard.LineFieldChange) 
@@ -92,8 +93,8 @@ always_ff @(posedge clk or posedge rst) begin
 
       end
       EVEN : begin
-        line_active <= `IN_RANGE_NN(line, registers.standard.Even.start, 
-                                          registers.standard.Even.stop);
+        line_active <= `IN_RNG_NN(line, registers.standard.Even.start, 
+                                        registers.standard.Even.stop);
         field <= '0;
         
         if(frame_end) 
