@@ -11,7 +11,6 @@ module adv7393_sync_gen
   input  ADV7393RegBlock_t       registers  ,
   //!
   output logic                   line_valid ,
-  output logic                   line_active,
   output logic [LINES_CNT_W-1:0] line       ,
   output logic                   frame_start,
   output logic                   frame_end  ,
@@ -71,7 +70,6 @@ always_ff @(posedge clk or posedge rst) begin
   if(rst) begin
     field_fsm   <= IDLE;
     field       <= '0;
-    line_active <= '0;
     line_valid  <= '0;
     line_start  <= '0;
   end else begin
@@ -84,8 +82,6 @@ always_ff @(posedge clk or posedge rst) begin
         field_fsm <= ODD;
       end
       ODD : begin
-        line_active <= `IN_RNG_NN(line, registers.standard.Odd.start, 
-                                        registers.standard.Odd.stop);
         field <= '1;
 
         if(line >= registers.standard.LineFieldChange) 
@@ -93,8 +89,6 @@ always_ff @(posedge clk or posedge rst) begin
 
       end
       EVEN : begin
-        line_active <= `IN_RNG_NN(line, registers.standard.Even.start, 
-                                        registers.standard.Even.stop);
         field <= '0;
         
         if(frame_end) 

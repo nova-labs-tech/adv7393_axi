@@ -173,4 +173,10 @@ function logic [15:0] pixel2out(PixelStored_t pixel, logic data_phase);
   return reverse_vector_out(value);
 endfunction
 
+
+function PixelStored_t data2pixel_stored(logic [PIXEL_STORED_SIZE-1:0] data);
+  data2pixel_stored.Y = data[7:0];    //! Need to rewrite
+  data2pixel_stored.CbCr = data[15:8];  //! Need to rewrite
+endfunction : data2pixel_stored
+
 endpackage : adv7393_pkg

@@ -53,11 +53,10 @@ endfunction
 
 function logic [7:0] axiLen(AxiMasterRdCtrl_t ctrl, AxiSize_t size);
   logic [7:0] ret;
-  int burstLenFloor = int'(ctrl.bytes) / axiSize2bytes(size);
   if(!((((ctrl.bytes) % (size)) == 0) ? 1 : 0))
-    ret = 8'(burstLenFloor);
+    ret = (ctrl.bytes) / axiSize2bytes(size);
   else 
-    ret = 8'(burstLenFloor + 1);
+    ret = (ctrl.bytes) / axiSize2bytes(size) + 1;
   return ret; 
 endfunction
 

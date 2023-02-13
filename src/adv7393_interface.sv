@@ -56,10 +56,10 @@ delayreg #(.WIDTH(2), .DELAY(4)) i_delayreg (
 );
 
 assign ic_clkin = clk_pixel;
+assign from_data = data2pixel_stored(line_buf_dout);
 
 always_comb begin
-  from_data = line_buf_dout;
-  if (blank_line || !line_valid) pix = blank_val;
+  if (blank_line || !line_valid) pix = adv7393_pkg::blank_val;
   else pix = from_data;    
 
   line_buf_read = line_valid && !data_phase;

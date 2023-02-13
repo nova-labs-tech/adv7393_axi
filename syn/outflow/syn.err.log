@@ -610,3 +610,101 @@
 [EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
 [EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:61)
 [EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:51:35
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[31]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:60)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen[7]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_master_rd.sv:156)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:53:27
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen.burstLenFloor[7]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_pkg.sv:60)
+[EFX-0010 VERI-ERROR] external connection to net 'axiLen[7]' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\axi_master_rd.sv:156)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:54:14
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'Odd' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:88)
+[EFX-0010 VERI-ERROR] 'Even' is not declared under prefix 'standard' (VERI-1187) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:97)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:58:05
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'line_active' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:73)
+[EFX-0010 VERI-ERROR] module 'adv7393_sync_gen' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:104)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:58:17
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'AxiMasterRdCtrl_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:50)
+[EFX-0010 VERI-ERROR] 'AxiMasterRdStatus_t' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top.sv:53)
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:88)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:58:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot find port 'line_start' on this module (VERI-1010) (D:\Work\adv7393_axi\src\adv7393_top.sv:90)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 21:59:48
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 22:00:44
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 13, 2023 22:05:36
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.

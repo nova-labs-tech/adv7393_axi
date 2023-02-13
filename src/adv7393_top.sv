@@ -34,6 +34,8 @@ module adv7393_top import adv7393_pkg::*; (
   output                    m_axi_rready
 );
 
+import axi_pkg::*;
+
 ADV7393RegBlock_t regs;
 
 always_comb regs = adv7393_pkg::def_config;
@@ -85,7 +87,6 @@ adv7393_interface i_adv7393_interface (
   .field           (field           ),
   .frame_start     (frame_start     ),
   .frame_end       (frame_end       ),
-  .line_start      (line_start      ),
   .blank_line      (blank_line      ),
   .line_buf_dout   (line_buf_dout   ),
   .line_buf_dval   (line_buf_dval   ),
