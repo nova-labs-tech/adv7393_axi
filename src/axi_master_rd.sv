@@ -113,7 +113,6 @@ task axi_r_accept_data();
   m_axis_tdata     = m_axi_rdata;
   m_axis_tlast     = m_axi_rlast;
   m_axis_tvalid    = m_axi_rvalid;
-  m_axi_rready     = m_axis_tready;
 endtask
 
 always_comb begin

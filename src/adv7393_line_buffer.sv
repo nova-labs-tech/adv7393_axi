@@ -55,7 +55,7 @@ dcfifo #(
   .WIDTH(COMPRESSED_WIDTH),
   .SIZE (BUFFER_SIZE     )
 ) i_dcfifo (
-  .rst    (reset        ),
+  .rst    (rst          ),
   //!
   .clkw   (clk          ),
   .data   (fifo_data    ),

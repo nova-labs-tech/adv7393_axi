@@ -53,14 +53,14 @@ logic        next_line;
 LineActInterval_t center_align;
 
 bcnts #(.MAX(LINES-1)) 
-i0_bcnts (.clk(clk), .aclr(frame_start), .ena(next_line), .dir('1), .q(line_per_field));
+i0_bcnts (.clk(clk), .aclr(frame_start), .ena(next_line), .dir('1), .q(line2read_wo_field));
 
 pdet i_pdet (.clk(clk), .in(next_line_in), .out(out));
 
 always_comb begin
   line2read = { line2read_wo_field, field };
 
-  req_size     = registers.frame.LineLength*PIXEL_SIZE;
+  req_size     = 16'(registers.frame.LineLength*PIXEL_SIZE);
   line_offset  = adv7393_pkg::line_offset(frame_base, line2read);
   frame_base   = adv7393_pkg::frame_base(registers, fb_sel);
   center_align = adv7393_pkg::frame_align_center(registers);

@@ -708,3 +708,30 @@
 [EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
 [EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_top.sv:41)
 [EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 15, 2023 09:14:17
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 15, 2023 09:16:32
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 15, 2023 10:06:28
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.

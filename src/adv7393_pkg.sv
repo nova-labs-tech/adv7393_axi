@@ -1,17 +1,16 @@
 package adv7393_pkg;
 
 // Параметры блока  
-parameter M_AXI_DWIDTH = 128;
-parameter S_AXI_DWIDTH = 32 ;
-parameter S_AXI_AWIDTH = 4  ;
-parameter CSR_ENABLE   = 4  ;
-parameter TEST_ENABLE  = 0  ;
-parameter VERSION      = 0  ;
+localparam M_AXI_DWIDTH = 128;
+localparam S_AXI_DWIDTH = 32 ;
+localparam S_AXI_AWIDTH = 4  ;
+localparam CSR_ENABLE   = 4  ;
+localparam TEST_ENABLE  = 0  ;
+localparam VERSION      = 0  ;
 
-parameter REG_WIDTH         = 32;
-parameter PIXELS_PER_SYMBOL = 4 ;
-
-parameter AXIS_DWIDTH = M_AXI_DWIDTH;
+localparam REG_WIDTH         = 32;
+localparam PIXELS_PER_SYMBOL = 4 ;
+localparam AXIS_DWIDTH = M_AXI_DWIDTH;
 
 typedef logic [REG_WIDTH-1:0] Reg_t;
 
@@ -53,24 +52,24 @@ typedef struct packed {
   StandardCfg_t standard;
 } ADV7393RegBlock_t;
 
-parameter Reg_t BASE         = 'h10000;
-parameter Reg_t LINE_STEP    = 'h1000;
-parameter Reg_t COUNT        = 2;
+localparam Reg_t BASE         = 'h10000;
+localparam Reg_t LINE_STEP    = 'h1000;
+localparam Reg_t COUNT        = 2;
 
-parameter LINE_LEN           = 640;
-parameter LINES              = 625;
-parameter BUFFER_DEPTH       = LINE_LEN/PIXELS_PER_SYMBOL;
-parameter BUFFER_COUNT       = COUNT;
-parameter BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
-parameter LINES_CNT_W        = $clog2(LINES);
+localparam LINE_LEN           = 640;
+localparam LINES              = 625;
+localparam BUFFER_DEPTH       = LINE_LEN/PIXELS_PER_SYMBOL;
+localparam BUFFER_COUNT       = COUNT;
+localparam BUFFER_SIZE        = BUFFER_COUNT*BUFFER_DEPTH;
+localparam LINES_CNT_W        = $clog2(LINES);
 
-parameter LINE_LEN_ACT_T     = (1536);
-parameter LINE_LEN_BLANK_T   = (352);
-parameter LINE_LEN_T         = (LINE_LEN_BLANK_T + LINE_LEN_ACT_T);
-parameter LINE_LEN_CNT_W     = $clog2(LINE_LEN_T);
-parameter HSYNC_W            = 4;
+localparam LINE_LEN_ACT_T     = (1536);
+localparam LINE_LEN_BLANK_T   = (352);
+localparam LINE_LEN_T         = (LINE_LEN_BLANK_T + LINE_LEN_ACT_T);
+localparam LINE_LEN_CNT_W     = $clog2(LINE_LEN_T);
+localparam HSYNC_W            = 4;
 
-parameter OUT_DWIDTH         = 10;
+localparam OUT_DWIDTH         = 10;
 
 FrameCtrl_t frame_ctrl0      = '{ 640, 480 };
 FrameCtrl_t frame_ctrl1      = '{ 640, 512 };
@@ -105,9 +104,9 @@ typedef struct packed {
 
 PixelStored_t blank_val = '{ 0, 0 };
 
-parameter PIXEL_SIZE         = $size(Pixel_t);
-parameter PIXEL_STORED_SIZE  = $size(PixelStored_t);
-parameter COMPRESSED_WIDTH   = PIXEL_STORED_SIZE*PIXELS_PER_SYMBOL;
+localparam PIXEL_SIZE         = $size(Pixel_t);
+localparam PIXEL_STORED_SIZE  = $size(PixelStored_t);
+localparam COMPRESSED_WIDTH   = PIXEL_STORED_SIZE*PIXELS_PER_SYMBOL;
 
 function PixelStored_t pixel_remove_dummy(Pixel_t pixel);
   PixelStored_t ret = '0;
@@ -149,11 +148,6 @@ function LineActInterval_t frame_align_center(ADV7393RegBlock_t registers);
   frame_align_center.stop   = frame_align_center.start + registers.frame.Lines;
 endfunction
 
-`define IN_RNG_SN(ITEM, LEFT, RIGHT) (((ITEM) > (LEFT)) && ((ITEM) <= (RIGHT)))
-`define IN_RNG_SS(ITEM, LEFT, RIGHT) (((ITEM) > (LEFT)) && ((ITEM) < (RIGHT)))
-`define IN_RNG_NS(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) < (RIGHT)))
-`define IN_RNG_NN(ITEM, LEFT, RIGHT) (((ITEM) >= (LEFT)) && ((ITEM) <= (RIGHT)))
-
 function logic blank_line([LINES_CNT_W-1:0] line2read,  LineActInterval_t interval);
   return (((line2read) >= (interval.start)) && ((line2read) <= (interval.stop)));
 endfunction
@@ -172,7 +166,6 @@ function logic [15:0] pixel2out(PixelStored_t pixel, logic data_phase);
 
   return reverse_vector_out(value);
 endfunction
-
 
 function PixelStored_t data2pixel_stored(logic [PIXEL_STORED_SIZE-1:0] data);
   data2pixel_stored.Y = data[7:0];    //! Need to rewrite
