@@ -109,7 +109,7 @@ localparam PIXEL_STORED_SIZE  = $size(PixelStored_t);
 localparam COMPRESSED_WIDTH   = PIXEL_STORED_SIZE*PIXELS_PER_SYMBOL;
 
 function PixelStored_t pixel_remove_dummy(Pixel_t pixel);
-  PixelStored_t ret = '0;
+  automatic PixelStored_t ret = '0;
   ret.Y = pixel.Y;
   ret.CbCr = pixel.CbCr;
   return ret;
@@ -153,11 +153,11 @@ function logic blank_line([LINES_CNT_W-1:0] line2read,  LineActInterval_t interv
 endfunction
 
 function logic [15:0] reverse_vector_out(input logic [15:0] din);
-    logic [15:0] ret = '0;        
-    for (int i = 0; i < $size(din); i++) begin
-        ret[i] = din[$size(din)-1-i];
-    end
-    return ret;
+  automatic logic [15:0] ret = '0;        
+  for (int i = 0; i < $size(din); i++) begin
+      ret[i] = din[$size(din)-1-i];
+  end
+  return ret;
 endfunction
 
 function logic [15:0] pixel2out(PixelStored_t pixel, logic data_phase);

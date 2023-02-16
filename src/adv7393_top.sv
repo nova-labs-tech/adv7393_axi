@@ -160,12 +160,6 @@ axi_master_rd #(
   .m_axis_tready       (s_axis_tready       )
 );
 
-logic [AXIS_DWIDTH-1:0] s_axis_tdata   ;
-logic [AXIS_DWIDTH/8:0] s_axis_tkeep   ;
-logic                   s_axis_tlast   ;
-logic                   s_axis_tvalid  ;
-logic                   s_axis_tready  ;
-
 endmodule
 
 
