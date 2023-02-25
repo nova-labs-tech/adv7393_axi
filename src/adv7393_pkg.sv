@@ -4,7 +4,7 @@ package adv7393_pkg;
 localparam M_AXI_DWIDTH = 128;
 localparam S_AXI_DWIDTH = 32 ;
 localparam S_AXI_AWIDTH = 4  ;
-localparam CSR_ENABLE   = 4  ;
+localparam CSR_ENABLE   = 0  ;
 localparam TEST_ENABLE  = 0  ;
 localparam VERSION      = 0  ;
 

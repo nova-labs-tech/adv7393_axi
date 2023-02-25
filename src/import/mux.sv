@@ -7,11 +7,11 @@ module mux #(
   output [DWIDTH-1:0]         q  
 );
 
-localparam INPUTS_POW2 = 1 << $clog2(INPUTS);
+localparam INPUTS_POW2 = (1 << $clog2(INPUTS));
 
 logic [INPUTS_POW2*DWIDTH-1:0] data_wide;
 
-assign data_wide = data;
-assign q = data_wide[sel*DWIDTH +: DWIDTH];
+assign data_wide = {'0, data};
+assign q = data[sel*DWIDTH +: DWIDTH];
 
 endmodule

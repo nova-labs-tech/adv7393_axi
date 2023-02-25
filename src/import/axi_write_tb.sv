@@ -517,6 +517,7 @@ task automatic rst_gen(ref rst_sig, ref clk_sig, int ticks);
   wait_ticks_r(clk_sig, ticks);
   rst_sig = '1;
   wait_ticks_r(clk_sig, ticks);
+  rst_sig = '0;
 endtask
 
 logic [RAM_COEF_WIDTH-1:0] ram_coef;

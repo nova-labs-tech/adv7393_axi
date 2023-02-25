@@ -49,16 +49,19 @@ bcnts #(.MAX(LINE_LEN_T-1), .BEHAVIOR("ROLL")) i0_bcnts (
   .q        (line_cnt )
 );
 
+logic [$clog2(LINES-1)-1:0] line_int;
+
 bcnts #(.MAX(LINES-1), .BEHAVIOR("ROLL")) i1_bcnts (
   .clk (clk      ),
   .aclr(rst      ),
   .ena (line_ends),
   .dir ('1       ),
   .ovf (frame_end),
-  .q   (line     )
+  .q   (line_int )
 );
 
 always_comb begin
+  line           = {'0, line_int};
   hsync_n        = !pulseo;
   actLineStart   = (registers.standard.PixelsPerLine - registers.frame.LineLength) / 2;
   activeLineStop = actLineStart + registers.frame.LineLength;

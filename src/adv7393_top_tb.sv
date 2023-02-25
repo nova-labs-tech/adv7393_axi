@@ -97,7 +97,7 @@ adv7393_top i_adv7393_top (
 
 initial tb_helper::clk_gen(clk, CLOCK_PERIOD);
 initial tb_helper::clk_gen(clk_pixel, CLOCK_PERIOD);
-initial tb_helper::reset_gen(clk, rst, RESET_DURATION);
+initial tb_helper::rst_gen(rst, clk, RESET_DURATION);
 
 cdn_axi4_slave_bfm #(
   .DATA_BUS_WIDTH              (M_AXI_DWIDTH  ),
@@ -108,7 +108,7 @@ cdn_axi4_slave_bfm #(
   .ACLK    (clk           ),
   .ARESETn (!rst          ),
   //!
-  .AWID    (m_axi_awid    ),
+  .AWID    ('0            ),
   .AWADDR  (m_axi_awaddr  ),
   .AWLEN   (m_axi_awlen   ),
   .AWSIZE  (m_axi_awsize  ),
@@ -125,14 +125,14 @@ cdn_axi4_slave_bfm #(
   .WDATA   (m_wdata       ),
   .WSTRB   (m_wstrb       ),
   .WLAST   (m_axi_wlast   ),
-  .WUSER   (WUSER         ),
+  .WUSER   (              ),
   .WVALID  (m_wvalid      ),
   .WREADY  (m_wready      ),
   //!
   .BID     (m_axi_bid     ),
   .BRESP   (m_axi_bresp   ),
   .BVALID  (m_axi_bvalid  ),
-  .BUSER   ('0            ),
+  .BUSER   (              ),
   .BREADY  (m_axi_bready  ),
   //!
   .ARID    ('0            ),
@@ -145,18 +145,45 @@ cdn_axi4_slave_bfm #(
   .ARPROT  (m_axi_arprot  ),
   .ARREGION(m_axi_arregion),
   .ARQOS   (m_axi_arqos   ),
-  .ARUSER  ('0            ),
+  .ARUSER  (              ),
   .ARVALID (m_axi_arvalid ),
   .ARREADY (m_axi_arready ),
   //!
-  .RID     ('0            ),
+  .RID     (              ),
   .RDATA   (m_axi_rdata   ),
   .RRESP   (m_axi_rresp   ),
   .RLAST   (m_axi_rlast   ),
-  .RUSER   ('0            ),
+  .RUSER   (              ),
   .RVALID  (m_axi_rvalid  ),
   .RREADY  (m_axi_rready  )
 );
+
+task reset();
+  m_axi_awprot  <= '0;
+  m_axi_awqos   <= '0;
+  m_axi_awcache <= '0;
+  m_axi_awlock  <= '0;
+  m_axi_awburst <= '0;
+  m_axi_awsize  <= '0;
+  m_axi_awlen   <= '0;
+  m_axi_awregion<= '0;
+  m_axi_awid    <= '0;
+  m_axi_awaddr  <= '0;
+  m_axi_awvalid <= '0;
+//
+  m_wlast  <= '0;
+  m_wstrb  <= '0;
+  m_wdata  <= '0;
+  m_wvalid <= '0;
+
+  m_axi_bready <= '0;
+
+endtask : reset
+
+initial begin
+  reset();  
+  wait_clk(clk, CLOCK_PERIOD);
+end
 
 
 endmodule

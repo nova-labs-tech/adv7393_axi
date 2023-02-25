@@ -36,15 +36,15 @@ PixelStored_t pix       ;
 PixelStored_t from_data ;
 
 adv7393_sync_gen i_adv7393_sync_gen (
-  .clk            (clk_pixel  ),
-  .rst            (rst        ),
-  .registers      (registers  ),
-  .line_valid     (line_valid ),
-  .line           (line       ),
-  .frame_start    (frame_start),
-  .frame_end      (frame_end  ),
-  .hsync_n        (hsync_n    ),
-  .field          (field      )
+  .clk        (clk_pixel  ),
+  .rst        (rst        ),
+  .registers  (registers  ),
+  .line_valid (line_valid ),
+  .line       (           ),
+  .frame_start(frame_start),
+  .frame_end  (frame_end  ),
+  .hsync_n    (hsync_n    ),
+  .field      (field      )
 );
 
 delayreg #(.WIDTH(2), .DELAY(4)) i_delayreg (
