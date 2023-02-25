@@ -735,3 +735,46 @@
 [EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv:63)
 [EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv:41)
 [EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:15:48
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'tb_helper' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top_tb.sv:7)
+[EFX-0010 VERI-ERROR] 'tb_helper' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top_tb.sv:98)
+[EFX-0010 VERI-ERROR] 'tb_helper' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top_tb.sv:99)
+[EFX-0010 VERI-ERROR] 'tb_helper' is not declared (VERI-1128) (D:\Work\adv7393_axi\src\adv7393_top_tb.sv:100)
+[EFX-0010 VERI-ERROR] module 'adv7393_top_tb' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_top_tb.sv:162)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:16:12
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_top.sv:41)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:17:44
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'frame_ctrl0' is not a constant (VERI-1188) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:89)
+[EFX-0010 VERI-ERROR] 'PAL625i' is not a constant (VERI-1188) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:91)
+[EFX-0010 VERI-ERROR] package 'adv7393_pkg' is ignored due to previous errors (VERI-1072) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:175)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:18:09
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] external connection to net 'n1' is not allowed (VDB-1011) (D:\Work\adv7393_axi\src\adv7393_interface.sv:63)
+[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:21:12
+///////////////////////////////////
+

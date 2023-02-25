@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<efx:project name="syn" description="Example project for PAL encoder" last_change_date="Ср Февраль 15 2023 10:11:25" location="C:/Users/Admin/Documents/Virtual Machines/Windows 10 x64/data/Martynov/adv7393_axi/syn" sw_version="2022.1.226" last_run_state="fail" last_run_tool="efx_map" last_run_flow="syn" config_result_in_sync="true" design_ood="change" place_ood="" route_ood="" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
+<efx:project name="syn" description="Example project for PAL encoder" last_change_date="Сб Февраль 25 2023 15:21:13" location="D:/Work/adv7393_axi/syn" sw_version="2022.1.226.3.17" last_run_state="pass" last_run_tool="efx_map" last_run_flow="syn" config_result_in_sync="true" design_ood="sync" place_ood="" route_ood="" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
     <efx:device_info>
         <efx:family name="Trion"/>
         <efx:device name="T8F81"/>
@@ -13,7 +13,6 @@
         <efx:design_file name="../src/adv7393_pkg.sv" version="default" library="default"/>
         <efx:design_file name="../src/adv7393_sync_gen.sv" version="default" library="default"/>
         <efx:design_file name="../src/adv7393_top.sv" version="default" library="default"/>
-        <efx:design_file name="../src/adv7393_top_tb.sv" version="default" library="default"/>
         <efx:design_file name="../src/axi_master_rd.sv" version="default" library="default"/>
         <efx:design_file name="../src/axi_pkg.sv" version="default" library="default"/>
         <efx:design_file name="../src/fifo_rd_dconv.sv" version="default" library="default"/>

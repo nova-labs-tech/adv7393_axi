@@ -1,174 +1,229 @@
 [EFX-0000 INFO] Efinix FPGA Synthesis.
-[EFX-0000 INFO] Version: 2022.1.226
-[EFX-0000 INFO] Compiled: Aug 29 2022.
+[EFX-0000 INFO] Version: 2022.1.226.3.17
+[EFX-0000 INFO] Compiled: Nov 25 2022.
 [EFX-0000 INFO] 
 [EFX-0000 INFO] Copyright (C) 2013 - 2022 Efinix Inc. All rights reserved.
 
-INFO: Read project database "C:/Users/Admin/Documents/Virtual Machines/Windows 10 x64/data/Martynov/adv7393_axi/syn/syn.xml"
+INFO: Read project database "D:/Work/adv7393_axi/syn/syn.xml"
 INFO: ***** Beginning Analysis ... *****
-INFO: default VHDL library search path is now "C:/Efinity/2022.1/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
--- Analyzing Verilog file 'C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv' (VERI-1482)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(92): WARNING: converting concatenation to assignment pattern (VERI-1905)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(112): WARNING: variable 'ret' must explicitly be declared as automatic or static (VERI-2013)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(156): WARNING: variable 'ret' must explicitly be declared as automatic or static (VERI-2013)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_pkg.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv' (VERI-1482)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv(58): INFO: undeclared symbol 'out', assumed default net type 'wire' (VERI-2561)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv' (VERI-1482)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(42): INFO: undeclared symbol 'line_valid', assumed default net type 'wire' (VERI-2561)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(43): INFO: undeclared symbol 'line', assumed default net type 'wire' (VERI-2561)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_line_buffer.sv' (VERI-1482)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_line_buffer.sv(58): INFO: undeclared symbol 'reset', assumed default net type 'wire' (VERI-2561)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_line_buffer.sv(72): INFO: undeclared symbol 'clkhalt', assumed default net type 'wire' (VERI-2561)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_sync_gen.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv' (VERI-1482)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(123): INFO: undeclared symbol 'lb_read_rdy_pix', assumed default net type 'wire' (VERI-2561)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(133): INFO: undeclared symbol 'm_axi_arid', assumed default net type 'wire' (VERI-2561)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(145): INFO: undeclared symbol 'm_axi_rid', assumed default net type 'wire' (VERI-2561)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(163): WARNING: data object 's_axis_tdata' is already declared (VERI-2170)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(102): INFO: previous declaration of 's_axis_tdata' is from here (VERI-1967)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(163): WARNING: second declaration of 's_axis_tdata' is ignored (VERI-1329)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(164): WARNING: data object 's_axis_tkeep' is already declared (VERI-2170)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(103): INFO: previous declaration of 's_axis_tkeep' is from here (VERI-1967)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(164): WARNING: second declaration of 's_axis_tkeep' is ignored (VERI-1329)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(165): WARNING: data object 's_axis_tlast' is already declared (VERI-2170)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(104): INFO: previous declaration of 's_axis_tlast' is from here (VERI-1967)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(165): WARNING: second declaration of 's_axis_tlast' is ignored (VERI-1329)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(166): WARNING: data object 's_axis_tvalid' is already declared (VERI-2170)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(105): INFO: previous declaration of 's_axis_tvalid' is from here (VERI-1967)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(166): WARNING: second declaration of 's_axis_tvalid' is ignored (VERI-1329)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(167): WARNING: data object 's_axis_tready' is already declared (VERI-2170)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(106): INFO: previous declaration of 's_axis_tready' is from here (VERI-1967)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(167): WARNING: second declaration of 's_axis_tready' is ignored (VERI-1329)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top_tb.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_master_rd.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\fifo_rd_dconv.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jksync.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bus_edet.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\gcnt.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\pulse.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bdet.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dcfifofsm.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\esync.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\gray2bin.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\usedcalc.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\edet.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\ndet.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dcfifo.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dsync.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcntsync.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\rsync.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bin2gray.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnts.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\pdet.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnt.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jkl.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\delayreg.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\mux.sv' (VERI-1482)
--- Analyzing Verilog file 'C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dpram.sv' (VERI-1482)
-INFO: Analysis took 0.0249974 seconds.
-INFO: 	Analysis took 0.015625 seconds (approximately) in total CPU time.
-INFO: Analysis virtual memory usage: begin = 55.52 MB, end = 55.856 MB, delta = 0.336 MB
-INFO: 	Analysis peak virtual memory usage = 55.864 MB
-INFO: Analysis resident set memory usage: begin = 55.732 MB, end = 58.564 MB, delta = 2.832 MB
-INFO: 	Analysis peak resident set memory usage = 58.568 MB
+INFO: default VHDL library search path is now "D:/Efinity/2022.1/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file 'D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\adv7393_pkg.sv' (VERI-1482)
+D:\Work\adv7393_axi\src\adv7393_pkg.sv(92): WARNING: converting concatenation to assignment pattern (VERI-1905)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\axi_pkg.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv' (VERI-1482)
+D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv(58): INFO: undeclared symbol 'out', assumed default net type 'wire' (VERI-2561)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\adv7393_interface.sv' (VERI-1482)
+D:\Work\adv7393_axi\src\adv7393_interface.sv(42): INFO: undeclared symbol 'line_valid', assumed default net type 'wire' (VERI-2561)
+D:\Work\adv7393_axi\src\adv7393_interface.sv(43): INFO: undeclared symbol 'line', assumed default net type 'wire' (VERI-2561)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\adv7393_line_buffer.sv' (VERI-1482)
+D:\Work\adv7393_axi\src\adv7393_line_buffer.sv(72): INFO: undeclared symbol 'clkhalt', assumed default net type 'wire' (VERI-2561)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\adv7393_sync_gen.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\adv7393_top.sv' (VERI-1482)
+D:\Work\adv7393_axi\src\adv7393_top.sv(123): INFO: undeclared symbol 'lb_read_rdy_pix', assumed default net type 'wire' (VERI-2561)
+D:\Work\adv7393_axi\src\adv7393_top.sv(133): INFO: undeclared symbol 'm_axi_arid', assumed default net type 'wire' (VERI-2561)
+D:\Work\adv7393_axi\src\adv7393_top.sv(145): INFO: undeclared symbol 'm_axi_rid', assumed default net type 'wire' (VERI-2561)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\axi_master_rd.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\fifo_rd_dconv.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\jksync.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\bus_edet.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\gcnt.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\pulse.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\bdet.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\dcfifofsm.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\esync.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\gray2bin.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\usedcalc.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\edet.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\ndet.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\dcfifo.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\dsync.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\bcntsync.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\rsync.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\bin2gray.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\bcnts.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\pdet.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\bcnt.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\jkl.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\delayreg.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\mux.sv' (VERI-1482)
+-- Analyzing Verilog file 'D:\Work\adv7393_axi\src\import\dpram.sv' (VERI-1482)
+INFO: Analysis took 0.0235475 seconds.
+INFO: 	Analysis took 0.03125 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 54.244 MB, end = 54.58 MB, delta = 0.336 MB
+INFO: 	Analysis peak virtual memory usage = 54.588 MB
+INFO: Analysis resident set memory usage: begin = 55.868 MB, end = 58.776 MB, delta = 2.908 MB
+INFO: 	Analysis peak resident set memory usage = 58.78 MB
 INFO: ***** Ending Analysis ... *****
 INFO: ***** Beginning Elaboration ... *****
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv(56): WARNING: port 'ovf' remains unconnected for this instance (VERI-1927)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv(65): WARNING: variable 'frame_base' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(48): WARNING: port 'line_start' remains unconnected for this instance (VERI-1927)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(56): WARNING: port 'taps' remains unconnected for this instance (VERI-1927)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_line_buffer.sv(47): WARNING: variable 'lb_write_rdy' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_sync_gen.sv(41): WARNING: port 'rst' remains unconnected for this instance (VERI-1927)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(124): WARNING: port 'lb_exception' remains unconnected for this instance (VERI-1927)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(161): WARNING: port 'm_axi_rready' remains unconnected for this instance (VERI-1927)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_COMB4' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(46): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(55): INFO: compiling module 'EFX_IDDR' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(69): INFO: compiling module 'EFX_ODDR' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(85): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(97): INFO: compiling module 'EFX_LUT4' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(105): INFO: compiling module 'EFX_MULT' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(140): INFO: compiling module 'EFX_DSP48' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(196): INFO: compiling module 'EFX_DSP24' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(249): INFO: compiling module 'EFX_DSP12' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(302): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(362): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(434): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(539): INFO: compiling module 'RAMB5' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(601): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(693): INFO: compiling module 'EFX_RAM10' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(794): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
-C:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(924): INFO: compiling module 'EFX_SRL8' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv(5): INFO: compiling module 'adv7393_frame_ctrl' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(74): WARNING: using initial value of 'frame_ctrl0' since it is never assigned (VERI-1220)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(77): WARNING: using initial value of 'PAL625i' since it is never assigned (VERI-1220)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(87): WARNING: using initial value of 'def_config' since it is never assigned (VERI-1220)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(105): WARNING: using initial value of 'blank_val' since it is never assigned (VERI-1220)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnts.sv(2): INFO: compiling module 'bcnts(MAX=624)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\pdet.sv(2): INFO: compiling module 'pdet' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\edet.sv(2): INFO: compiling module 'edet' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv(45): WARNING: net 'line[9]' does not have a driver (VDB-1002)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_frame_ctrl.sv(51): WARNING: net 'next_line' does not have a driver (VDB-1002)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(7): INFO: compiling module 'adv7393_interface' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_sync_gen.sv(5): INFO: compiling module 'adv7393_sync_gen' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\pulse.sv(1): INFO: compiling module 'pulse(WIDTH=4)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnts.sv(2): INFO: compiling module 'bcnts(MAX=1887)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_sync_gen.sv(41): WARNING: input port 'rst' remains unconnected for this instance (VDB-1053)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(43): WARNING: actual bit length 1 differs from formal bit length 10 for port 'line' (VERI-1330)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\delayreg.sv(2): INFO: compiling module 'delayreg(WIDTH=2,DELAY=4)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\delayreg.sv(21): INFO: extracting RAM for identifier 'chain' (VERI-2571)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(7): INFO: module 'adv7393_interface' remains a black box due to errors in its contents (VERI-1073)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_line_buffer.sv(8): INFO: compiling module 'adv7393_line_buffer' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_pkg.sv(119): WARNING: assignment and/or driver for 'res' inside static function 'data2pixel' is not preserved (VERI-2457)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\rsync.sv(2): INFO: compiling module 'rsync' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dcfifo.sv(1): INFO: compiling module 'dcfifo(WIDTH=64,SIZE=32'b0101000000)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnt.sv(2): INFO: compiling module 'bcnt(MAX=32'b0100111111,BEHAVIOR="ROLL",WIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnt.sv(2): INFO: compiling module 'bcnt(MAX=32'b0100111111,WIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dpram.sv(1): INFO: compiling module 'dpram(DWIDTH=64,AWIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dpram.sv(23): INFO: extracting RAM for identifier 'mem' (VERI-2571)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcntsync.sv(2): INFO: compiling module 'bcntsync(WIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bin2gray.sv(1): INFO: compiling module 'bin2gray(DWIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_interface.sv(63): ERROR: external connection to net 'n1' is not allowed (VDB-1011)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\gray2bin.sv(1): INFO: compiling module 'gray2bin(DWIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\usedcalc.sv(1): INFO: compiling module 'usedcalc(WIDTH=9)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\fifo_rd_dconv.sv(5): INFO: compiling module 'fifo_rd_dconv' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\delayreg.sv(2): INFO: compiling module 'delayreg(WIDTH=1,DELAY=1)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bcnts.sv(2): INFO: compiling module 'bcnts(MAX=3)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\mux.sv(1): INFO: compiling module 'mux(DWIDTH=64)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\fifo_rd_dconv.sv(61): WARNING: actual bit length 64 differs from formal bit length 256 for port 'data' (VERI-1330)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\delayreg.sv(2): INFO: compiling module 'delayreg(WIDTH=17,DELAY=1)' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_line_buffer.sv(58): WARNING: net 'reset' does not have a driver (VDB-1002)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(5): INFO: compiling module 'adv7393_top' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(5): INFO: module 'adv7393_top' remains a black box due to errors in its contents (VERI-1073)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top_tb.sv(5): INFO: compiling module 'adv7393_top_tb' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_master_rd.sv(7): INFO: compiling module 'axi_master_rd' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_pkg.sv(57): WARNING: expression size 12 truncated to fit in target size 8 (VERI-1209)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_pkg.sv(59): WARNING: expression size 13 truncated to fit in target size 8 (VERI-1209)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_master_rd.sv(172): WARNING: net 'm_axi_rready' is already driven by input port 'm_axis_tready' (VDB-1003)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_master_rd.sv(50): INFO: driving port 'm_axis_tready' is declared here (VDB-1020)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\adv7393_top.sv(41): ERROR: external connection to net 'n1' is not allowed (VDB-1011)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jksync.sv(2): INFO: compiling module 'jksync' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jkl.sv(2): INFO: compiling module 'jkl' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jkl.sv(13): WARNING: latch inferred for net 'q' (VERI-2580)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jksync.sv(17): WARNING: net 'reset_latch' does not have a driver (VDB-1002)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bus_edet.sv(1): INFO: compiling module 'bus_edet' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\gcnt.sv(2): INFO: compiling module 'gcnt' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\bdet.sv(2): INFO: compiling module 'bdet' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\edet.sv(2): INFO: compiling module 'edet(EDGE="BOTH")' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dcfifofsm.sv(1): INFO: compiling module 'dcfifofsm' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\esync.sv(2): INFO: compiling module 'esync' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\ndet.sv(2): INFO: compiling module 'ndet' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\edet.sv(2): INFO: compiling module 'edet(EDGE="NEG")' (VERI-1018)
-C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\dsync.sv(2): INFO: compiling module 'dsync' (VERI-1018)
-INFO: Elaboration took 0.0746996 seconds.
-INFO: 	Elaboration took 0.0625 seconds (approximately) in total CPU time.
-INFO: Elaboration virtual memory usage: begin = 55.856 MB, end = 69.072 MB, delta = 13.216 MB
-INFO: 	Elaboration peak virtual memory usage = 69.072 MB
-INFO: Elaboration resident set memory usage: begin = 58.576 MB, end = 72.768 MB, delta = 14.192 MB
-INFO: 	Elaboration peak resident set memory usage = 72.772 MB
+D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv(56): WARNING: port 'ovf' remains unconnected for this instance (VERI-1927)
+D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv(65): WARNING: variable 'frame_base' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336)
+D:\Work\adv7393_axi\src\adv7393_interface.sv(48): WARNING: port 'line_start' remains unconnected for this instance (VERI-1927)
+D:\Work\adv7393_axi\src\adv7393_interface.sv(56): WARNING: port 'taps' remains unconnected for this instance (VERI-1927)
+D:\Work\adv7393_axi\src\adv7393_line_buffer.sv(47): WARNING: variable 'lb_write_rdy' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336)
+D:\Work\adv7393_axi\src\adv7393_sync_gen.sv(41): WARNING: port 'rst' remains unconnected for this instance (VERI-1927)
+D:\Work\adv7393_axi\src\adv7393_top.sv(124): WARNING: port 'lb_exception' remains unconnected for this instance (VERI-1927)
+D:\Work\adv7393_axi\src\adv7393_top.sv(161): WARNING: port 'm_axi_rready' remains unconnected for this instance (VERI-1927)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(46): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(55): INFO: compiling module 'EFX_IDDR' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(69): INFO: compiling module 'EFX_ODDR' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(85): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(97): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(105): INFO: compiling module 'EFX_MULT' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(140): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(196): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(249): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(302): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(362): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(434): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(539): INFO: compiling module 'RAMB5' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(601): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(693): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(794): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(924): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv(5): INFO: compiling module 'adv7393_frame_ctrl' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bcnts.sv(2): INFO: compiling module 'bcnts(MAX=624)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\pdet.sv(2): INFO: compiling module 'pdet' (VERI-1018)
+D:\Work\adv7393_axi\src\import\edet.sv(2): INFO: compiling module 'edet' (VERI-1018)
+D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv(45): WARNING: net 'line[9]' does not have a driver (VDB-1002)
+D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv(51): WARNING: net 'next_line' does not have a driver (VDB-1002)
+D:\Work\adv7393_axi\src\adv7393_interface.sv(7): INFO: compiling module 'adv7393_interface' (VERI-1018)
+D:\Work\adv7393_axi\src\adv7393_sync_gen.sv(5): INFO: compiling module 'adv7393_sync_gen' (VERI-1018)
+D:\Work\adv7393_axi\src\import\pulse.sv(1): INFO: compiling module 'pulse(WIDTH=4)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bcnts.sv(2): INFO: compiling module 'bcnts(MAX=1887)' (VERI-1018)
+D:\Work\adv7393_axi\src\adv7393_sync_gen.sv(41): WARNING: input port 'rst' remains unconnected for this instance (VDB-1053)
+D:\Work\adv7393_axi\src\adv7393_interface.sv(43): WARNING: actual bit length 1 differs from formal bit length 10 for port 'line' (VERI-1330)
+D:\Work\adv7393_axi\src\import\delayreg.sv(2): INFO: compiling module 'delayreg(WIDTH=2,DELAY=4)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\delayreg.sv(21): INFO: extracting RAM for identifier 'chain' (VERI-2571)
+D:\Work\adv7393_axi\src\adv7393_line_buffer.sv(8): INFO: compiling module 'adv7393_line_buffer' (VERI-1018)
+D:\Work\adv7393_axi\src\adv7393_pkg.sv(119): WARNING: assignment and/or driver for 'res' inside static function 'data2pixel' is not preserved (VERI-2457)
+D:\Work\adv7393_axi\src\import\rsync.sv(2): INFO: compiling module 'rsync' (VERI-1018)
+D:\Work\adv7393_axi\src\import\dcfifo.sv(1): INFO: compiling module 'dcfifo(WIDTH=64,SIZE=32'b0101000000)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bcnt.sv(2): INFO: compiling module 'bcnt(MAX=32'b0100111111,BEHAVIOR="ROLL",WIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bcnt.sv(2): INFO: compiling module 'bcnt(MAX=32'b0100111111,WIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\dpram.sv(1): INFO: compiling module 'dpram(DWIDTH=64,AWIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\dpram.sv(23): INFO: extracting RAM for identifier 'mem' (VERI-2571)
+D:\Work\adv7393_axi\src\import\bcntsync.sv(2): INFO: compiling module 'bcntsync(WIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bin2gray.sv(1): INFO: compiling module 'bin2gray(DWIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\gray2bin.sv(1): INFO: compiling module 'gray2bin(DWIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\usedcalc.sv(1): INFO: compiling module 'usedcalc(WIDTH=9)' (VERI-1018)
+D:\Work\adv7393_axi\src\fifo_rd_dconv.sv(5): INFO: compiling module 'fifo_rd_dconv' (VERI-1018)
+D:\Work\adv7393_axi\src\import\delayreg.sv(2): INFO: compiling module 'delayreg(WIDTH=1,DELAY=1)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bcnts.sv(2): INFO: compiling module 'bcnts(MAX=3)' (VERI-1018)
+D:\Work\adv7393_axi\src\import\mux.sv(1): INFO: compiling module 'mux(DWIDTH=64)' (VERI-1018)
+D:\Work\adv7393_axi\src\fifo_rd_dconv.sv(61): WARNING: actual bit length 64 differs from formal bit length 256 for port 'data' (VERI-1330)
+D:\Work\adv7393_axi\src\import\delayreg.sv(2): INFO: compiling module 'delayreg(WIDTH=17,DELAY=1)' (VERI-1018)
+D:\Work\adv7393_axi\src\adv7393_top.sv(5): INFO: compiling module 'adv7393_top' (VERI-1018)
+D:\Work\adv7393_axi\src\axi_master_rd.sv(7): INFO: compiling module 'axi_master_rd' (VERI-1018)
+D:\Work\adv7393_axi\src\axi_pkg.sv(57): WARNING: expression size 12 truncated to fit in target size 8 (VERI-1209)
+D:\Work\adv7393_axi\src\axi_pkg.sv(59): WARNING: expression size 13 truncated to fit in target size 8 (VERI-1209)
+D:\Work\adv7393_axi\src\adv7393_top.sv(46): WARNING: net 'line_start' does not have a driver (VDB-1002)
+D:\Work\adv7393_axi\src\adv7393_top.sv(76): WARNING: net 'fb_read_rdy' does not have a driver (VDB-1002)
+D:\Work\adv7393_axi\src\adv7393_top.sv(145): WARNING: net 'm_axi_rid' does not have a driver (VDB-1002)
+D:\Work\adv7393_axi\src\import\jksync.sv(2): INFO: compiling module 'jksync' (VERI-1018)
+D:\Work\adv7393_axi\src\import\jkl.sv(2): INFO: compiling module 'jkl' (VERI-1018)
+D:\Work\adv7393_axi\src\import\jkl.sv(13): WARNING: latch inferred for net 'q' (VERI-2580)
+D:\Work\adv7393_axi\src\import\jksync.sv(17): WARNING: net 'reset_latch' does not have a driver (VDB-1002)
+D:\Work\adv7393_axi\src\import\bus_edet.sv(1): INFO: compiling module 'bus_edet' (VERI-1018)
+D:\Work\adv7393_axi\src\import\gcnt.sv(2): INFO: compiling module 'gcnt' (VERI-1018)
+D:\Work\adv7393_axi\src\import\bdet.sv(2): INFO: compiling module 'bdet' (VERI-1018)
+D:\Work\adv7393_axi\src\import\edet.sv(2): INFO: compiling module 'edet(EDGE="BOTH")' (VERI-1018)
+D:\Work\adv7393_axi\src\import\dcfifofsm.sv(1): INFO: compiling module 'dcfifofsm' (VERI-1018)
+D:\Work\adv7393_axi\src\import\esync.sv(2): INFO: compiling module 'esync' (VERI-1018)
+D:\Work\adv7393_axi\src\import\ndet.sv(2): INFO: compiling module 'ndet' (VERI-1018)
+D:\Work\adv7393_axi\src\import\edet.sv(2): INFO: compiling module 'edet(EDGE="NEG")' (VERI-1018)
+D:\Work\adv7393_axi\src\import\dsync.sv(2): INFO: compiling module 'dsync' (VERI-1018)
+INFO: Elaboration took 0.0706021 seconds.
+INFO: 	Elaboration took 0.03125 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 54.58 MB, end = 67.336 MB, delta = 12.756 MB
+INFO: 	Elaboration peak virtual memory usage = 67.336 MB
+INFO: Elaboration resident set memory usage: begin = 58.788 MB, end = 72.464 MB, delta = 13.676 MB
+INFO: 	Elaboration peak resident set memory usage = 72.468 MB
 INFO: ***** Ending Elaboration ... *****
-[EFX-0021 ERROR] Verific elaboration of module 'dsync' failed.
+[EFX-0008 WARNING] Top module not specified. 'dsync' is used as top module for the design.
+[EFX-0000 INFO] Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file 'D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(46): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(55): INFO: compiling module 'EFX_IDDR' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(69): INFO: compiling module 'EFX_ODDR' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(85): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(97): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(105): INFO: compiling module 'EFX_MULT' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(140): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(196): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(249): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(302): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(362): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(434): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(539): INFO: compiling module 'RAMB5' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(601): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(693): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(794): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+D:/Efinity/2022.1/sim_models/maplib/efinix_maplib.v(924): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0134744 seconds.
+INFO: 	Reading Mapping Library took 0.015625 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 67.404 MB, end = 67.932 MB, delta = 0.528 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 67.932 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 72.676 MB, end = 73.112 MB, delta = 0.436 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 73.116 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
+[EFX-0000 INFO] ... Mapping design "dsync"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bus_edet" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bus_edet" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "esync" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "esync" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "dsync" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 1 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "dsync" end (Real time : 0s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network clki with 22 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Clock Network clko with 13 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 0s)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 1s)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 9, ed: 30, lv: 3, pw: 50.60
+[EFX-0000 INFO] ... LUT mapping end (Real time : 0s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network n4 with 22 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network n13 with 13 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 0 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 0s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+INFO: VDB Netlist Checker took 0.0009083 seconds.
+INFO: 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 75.448 MB, end = 75.448 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 98.116 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 85.6 MB, end = 85.636 MB, delta = 0.036 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 105.268 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'dsync' to Verilog file 'D:/Work/adv7393_axi/syn/outflow/syn.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_LUT4        : 	9
+[EFX-0000 INFO] EFX_FF          : 	35
+[EFX-0000 INFO] EFX_GBUFCE      : 	2
+[EFX-0000 INFO] =============================== 

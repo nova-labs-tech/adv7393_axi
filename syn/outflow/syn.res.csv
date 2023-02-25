@@ -1,0 +1,11 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Feb 25, 2023 15:21:12
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
+dsync:dsync           	     35(17)	       0(0)	       9(3)	     0(0)	     0(0)	
+ +i_bus_edet:bus_edet 	       8(8)	       0(0)	       5(5)	     0(0)	     0(0)	
+ +i0_esync:esync      	       5(5)	       0(0)	       1(1)	     0(0)	     0(0)	
+ +i1_esync:esync      	       5(5)	       0(0)	       0(0)	     0(0)	     0(0)	

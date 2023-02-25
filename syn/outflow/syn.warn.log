@@ -2976,3 +2976,104 @@
 [EFX-0011 VERI-WARNING] net 'm_axi_rready' is already driven by input port 'm_axis_tready' (VDB-1003) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\axi_master_rd.sv:172)
 [EFX-0011 VERI-WARNING] latch inferred for net 'q' (VERI-2580) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jkl.sv:13)
 [EFX-0011 VERI-WARNING] net 'reset_latch' does not have a driver (VDB-1002) (C:\Users\Admin\Documents\Virtual Machines\Windows 10 x64\data\Martynov\adv7393_axi\src\import\jksync.sv:17)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:15:48
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:92)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:16:12
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:92)
+[EFX-0011 VERI-WARNING] port 'ovf' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:56)
+[EFX-0011 VERI-WARNING] variable 'frame_base' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:65)
+[EFX-0011 VERI-WARNING] port 'line_start' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_interface.sv:48)
+[EFX-0011 VERI-WARNING] port 'taps' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_interface.sv:56)
+[EFX-0011 VERI-WARNING] variable 'lb_write_rdy' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:47)
+[EFX-0011 VERI-WARNING] port 'rst' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:41)
+[EFX-0011 VERI-WARNING] port 'lb_exception' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_top.sv:124)
+[EFX-0011 VERI-WARNING] port 'm_axi_rready' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_top.sv:161)
+[EFX-0011 VERI-WARNING] using initial value of 'frame_ctrl0' since it is never assigned (VERI-1220) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:74)
+[EFX-0011 VERI-WARNING] using initial value of 'PAL625i' since it is never assigned (VERI-1220) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:77)
+[EFX-0011 VERI-WARNING] using initial value of 'def_config' since it is never assigned (VERI-1220) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:87)
+[EFX-0011 VERI-WARNING] using initial value of 'blank_val' since it is never assigned (VERI-1220) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:105)
+[EFX-0011 VERI-WARNING] net 'line[9]' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:45)
+[EFX-0011 VERI-WARNING] net 'next_line' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:51)
+[EFX-0011 VERI-WARNING] input port 'rst' remains unconnected for this instance (VDB-1053) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:41)
+[EFX-0011 VERI-WARNING] actual bit length 1 differs from formal bit length 10 for port 'line' (VERI-1330) (D:\Work\adv7393_axi\src\adv7393_interface.sv:43)
+[EFX-0011 VERI-WARNING] assignment and/or driver for 'res' inside static function 'data2pixel' is not preserved (VERI-2457) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:119)
+[EFX-0011 VERI-WARNING] actual bit length 64 differs from formal bit length 256 for port 'data' (VERI-1330) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:61)
+[EFX-0011 VERI-WARNING] expression size 12 truncated to fit in target size 8 (VERI-1209) (D:\Work\adv7393_axi\src\axi_pkg.sv:57)
+[EFX-0011 VERI-WARNING] expression size 13 truncated to fit in target size 8 (VERI-1209) (D:\Work\adv7393_axi\src\axi_pkg.sv:59)
+[EFX-0011 VERI-WARNING] latch inferred for net 'q' (VERI-2580) (D:\Work\adv7393_axi\src\import\jkl.sv:13)
+[EFX-0011 VERI-WARNING] net 'reset_latch' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\import\jksync.sv:17)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:17:44
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:92)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:18:09
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:92)
+[EFX-0011 VERI-WARNING] port 'ovf' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:56)
+[EFX-0011 VERI-WARNING] variable 'frame_base' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:65)
+[EFX-0011 VERI-WARNING] port 'line_start' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_interface.sv:48)
+[EFX-0011 VERI-WARNING] port 'taps' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_interface.sv:56)
+[EFX-0011 VERI-WARNING] variable 'lb_write_rdy' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:47)
+[EFX-0011 VERI-WARNING] port 'rst' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:41)
+[EFX-0011 VERI-WARNING] port 'lb_exception' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_top.sv:124)
+[EFX-0011 VERI-WARNING] port 'm_axi_rready' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_top.sv:161)
+[EFX-0011 VERI-WARNING] using initial value of 'blank_val' since it is never assigned (VERI-1220) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:105)
+[EFX-0011 VERI-WARNING] net 'line[9]' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:45)
+[EFX-0011 VERI-WARNING] net 'next_line' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:51)
+[EFX-0011 VERI-WARNING] input port 'rst' remains unconnected for this instance (VDB-1053) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:41)
+[EFX-0011 VERI-WARNING] actual bit length 1 differs from formal bit length 10 for port 'line' (VERI-1330) (D:\Work\adv7393_axi\src\adv7393_interface.sv:43)
+[EFX-0011 VERI-WARNING] assignment and/or driver for 'res' inside static function 'data2pixel' is not preserved (VERI-2457) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:119)
+[EFX-0011 VERI-WARNING] actual bit length 64 differs from formal bit length 256 for port 'data' (VERI-1330) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:61)
+[EFX-0011 VERI-WARNING] expression size 12 truncated to fit in target size 8 (VERI-1209) (D:\Work\adv7393_axi\src\axi_pkg.sv:57)
+[EFX-0011 VERI-WARNING] expression size 13 truncated to fit in target size 8 (VERI-1209) (D:\Work\adv7393_axi\src\axi_pkg.sv:59)
+[EFX-0011 VERI-WARNING] net 'line_start' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_top.sv:46)
+[EFX-0011 VERI-WARNING] net 'fb_read_rdy' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_top.sv:76)
+[EFX-0011 VERI-WARNING] net 'm_axi_rid' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_top.sv:145)
+[EFX-0011 VERI-WARNING] latch inferred for net 'q' (VERI-2580) (D:\Work\adv7393_axi\src\import\jkl.sv:13)
+[EFX-0011 VERI-WARNING] net 'reset_latch' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\import\jksync.sv:17)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 25, 2023 15:21:12
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] converting concatenation to assignment pattern (VERI-1905) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:92)
+[EFX-0011 VERI-WARNING] port 'ovf' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:56)
+[EFX-0011 VERI-WARNING] variable 'frame_base' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:65)
+[EFX-0011 VERI-WARNING] port 'line_start' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_interface.sv:48)
+[EFX-0011 VERI-WARNING] port 'taps' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_interface.sv:56)
+[EFX-0011 VERI-WARNING] variable 'lb_write_rdy' is used before it is assigned in an always_comb or always @* block; synthesis - simulation differences may occur (VERI-2336) (D:\Work\adv7393_axi\src\adv7393_line_buffer.sv:47)
+[EFX-0011 VERI-WARNING] port 'rst' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:41)
+[EFX-0011 VERI-WARNING] port 'lb_exception' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_top.sv:124)
+[EFX-0011 VERI-WARNING] port 'm_axi_rready' remains unconnected for this instance (VERI-1927) (D:\Work\adv7393_axi\src\adv7393_top.sv:161)
+[EFX-0011 VERI-WARNING] net 'line[9]' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:45)
+[EFX-0011 VERI-WARNING] net 'next_line' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_frame_ctrl.sv:51)
+[EFX-0011 VERI-WARNING] input port 'rst' remains unconnected for this instance (VDB-1053) (D:\Work\adv7393_axi\src\adv7393_sync_gen.sv:41)
+[EFX-0011 VERI-WARNING] actual bit length 1 differs from formal bit length 10 for port 'line' (VERI-1330) (D:\Work\adv7393_axi\src\adv7393_interface.sv:43)
+[EFX-0011 VERI-WARNING] assignment and/or driver for 'res' inside static function 'data2pixel' is not preserved (VERI-2457) (D:\Work\adv7393_axi\src\adv7393_pkg.sv:119)
+[EFX-0011 VERI-WARNING] actual bit length 64 differs from formal bit length 256 for port 'data' (VERI-1330) (D:\Work\adv7393_axi\src\fifo_rd_dconv.sv:61)
+[EFX-0011 VERI-WARNING] expression size 12 truncated to fit in target size 8 (VERI-1209) (D:\Work\adv7393_axi\src\axi_pkg.sv:57)
+[EFX-0011 VERI-WARNING] expression size 13 truncated to fit in target size 8 (VERI-1209) (D:\Work\adv7393_axi\src\axi_pkg.sv:59)
+[EFX-0011 VERI-WARNING] net 'line_start' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_top.sv:46)
+[EFX-0011 VERI-WARNING] net 'fb_read_rdy' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_top.sv:76)
+[EFX-0011 VERI-WARNING] net 'm_axi_rid' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\adv7393_top.sv:145)
+[EFX-0011 VERI-WARNING] latch inferred for net 'q' (VERI-2580) (D:\Work\adv7393_axi\src\import\jkl.sv:13)
+[EFX-0011 VERI-WARNING] net 'reset_latch' does not have a driver (VDB-1002) (D:\Work\adv7393_axi\src\import\jksync.sv:17)
+[EFX-0008 WARNING] Top module not specified. 'dsync' is used as top module for the design.

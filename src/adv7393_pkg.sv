@@ -71,10 +71,10 @@ localparam HSYNC_W            = 4;
 
 localparam OUT_DWIDTH         = 10;
 
-FrameCtrl_t frame_ctrl0      = '{ 640, 480 };
-FrameCtrl_t frame_ctrl1      = '{ 640, 512 };
+localparam FrameCtrl_t frame_ctrl0      = '{ 640, 480 };
+localparam FrameCtrl_t frame_ctrl1      = '{ 640, 512 };
 
-StandardCfg_t PAL625i = '{
+localparam StandardCfg_t PAL625i = '{
   LINES, 
   768,
   576,
@@ -84,7 +84,7 @@ StandardCfg_t PAL625i = '{
   1 
 };
 
-ADV7393RegBlock_t def_config = {
+localparam ADV7393RegBlock_t def_config = {
   '{ VERSION, '0 },
   frame_ctrl0,
   '{ BASE, LINE_STEP, COUNT },
@@ -102,7 +102,7 @@ typedef struct packed {
   logic [7:0] CbCr;
 } PixelStored_t;
 
-PixelStored_t blank_val = '{ 0, 0 };
+localparam PixelStored_t blank_val = '{ 0, 0 };
 
 localparam PIXEL_SIZE         = $size(Pixel_t);
 localparam PIXEL_STORED_SIZE  = $size(PixelStored_t);
