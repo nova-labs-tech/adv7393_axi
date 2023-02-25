@@ -8,36 +8,65 @@ import tb_helper::*;
 import axi_pkg::*;
 import adv7393_pkg::*;
 
-int CLOCK_PERIOD   = 5 ;
-int RESET_DURATION = 10;
+int            CLOCK_PERIOD       = 5    ;
+int            CLOCK_PIXEL_PERIOD = 16   ;
+int            RESET_DURATION     = 10   ;
+localparam int SLAVE_MEM_SIZE     = 65536;
+localparam int ID_WIDTH           = 1    ;
 
-logic                    clk           ;
-logic                    rst           ;
-logic                    clk_pixel     ;
+
+logic clk      ;
+logic rst      ;
+logic clk_pixel;
 //!
-logic                    fb_sel        ;
+logic fb_sel;
 //!
-logic                    ic_clkin      ;
-logic                    ic_hsync      ;
-logic                    ic_vsync      ;
+logic        ic_clkin;
+logic        ic_hsync;
+logic        ic_vsync;
+logic [15:0] ic_data ;
 //!
-logic [            15:0] ic_data       ;
-logic [            31:0] m_axi_araddr  ;
-logic [             7:0] m_axi_arlen   ;
-logic [             2:0] m_axi_arsize  ;
-logic [             1:0] m_axi_arburst ;
-logic [             0:0] m_axi_arlock  ;
-logic [             3:0] m_axi_arcache ;
-logic [             2:0] m_axi_arprot  ;
-logic [             3:0] m_axi_arregion;
-logic [             3:0] m_axi_arqos   ;
-logic                    m_axi_arvalid ;
-logic                    m_axi_arready ;
-logic [M_AXI_DWIDTH-1:0] m_axi_rdata   ;
-logic [             1:0] m_axi_rresp   ;
-logic                    m_axi_rlast   ;
-logic                    m_axi_rvalid  ;
-logic                    m_axi_rready  ;
+logic [31:0] m_axi_araddr  ;
+logic [ 7:0] m_axi_arlen   ;
+logic [ 2:0] m_axi_arsize  ;
+logic [ 1:0] m_axi_arburst ;
+logic [ 0:0] m_axi_arlock  ;
+logic [ 3:0] m_axi_arcache ;
+logic [ 2:0] m_axi_arprot  ;
+logic [ 3:0] m_axi_arregion;
+logic [ 3:0] m_axi_arqos   ;
+logic        m_axi_arvalid ;
+logic        m_axi_arready ;
+//!
+logic [M_AXI_DWIDTH-1:0] m_axi_rdata ;
+logic [             1:0] m_axi_rresp ;
+logic                    m_axi_rlast ;
+logic                    m_axi_rvalid;
+logic                    m_axi_rready;
+
+logic [         2:0] m_axi_awprot  ;
+logic [         3:0] m_axi_awqos   ;
+logic [         3:0] m_axi_awcache ;
+logic                m_axi_awlock  ;
+logic [         1:0] m_axi_awburst ;
+logic [         2:0] m_axi_awsize  ;
+logic [         7:0] m_axi_awlen   ;
+logic [         3:0] m_axi_awregion;
+logic [ID_WIDTH-1:0] m_axi_awid    ;
+logic [        31:0] m_axi_awaddr  ;
+logic                m_axi_awready ;
+logic                m_axi_awvalid ;
+//
+logic                      m_wlast ;
+logic [M_AXI_DWIDTH/8-1:0] m_wstrb ;
+logic [  M_AXI_DWIDTH-1:0] m_wdata ;
+logic                      m_wready;
+logic                      m_wvalid;
+
+logic [         1:0] m_axi_bresp ;
+logic [ID_WIDTH-1:0] m_axi_bid   ;
+logic                m_axi_bready;
+logic                m_axi_bvalid;
 
 adv7393_top i_adv7393_top (
   .clk           (clk           ),
@@ -67,7 +96,67 @@ adv7393_top i_adv7393_top (
 );
 
 initial tb_helper::clk_gen(clk, CLOCK_PERIOD);
+initial tb_helper::clk_gen(clk_pixel, CLOCK_PERIOD);
 initial tb_helper::reset_gen(clk, rst, RESET_DURATION);
+
+cdn_axi4_slave_bfm #(
+  .DATA_BUS_WIDTH              (M_AXI_DWIDTH  ),
+  .SLAVE_ADDRESS               (0             ),
+  .SLAVE_MEM_SIZE              (SLAVE_MEM_SIZE),
+  .MAX_OUTSTANDING_TRANSACTIONS(8             )
+) i_cdn_axi4_slave_bfm (
+  .ACLK    (clk           ),
+  .ARESETn (!rst          ),
+  //!
+  .AWID    (m_axi_awid    ),
+  .AWADDR  (m_axi_awaddr  ),
+  .AWLEN   (m_axi_awlen   ),
+  .AWSIZE  (m_axi_awsize  ),
+  .AWBURST (m_axi_awburst ),
+  .AWLOCK  (m_axi_awlock  ),
+  .AWCACHE (m_axi_awcache ),
+  .AWPROT  (m_axi_awprot  ),
+  .AWREGION(m_axi_awregion),
+  .AWQOS   (m_axi_awqos   ),
+  .AWUSER  (              ),
+  .AWVALID (m_axi_awvalid ),
+  .AWREADY (m_axi_awready ),
+  //!
+  .WDATA   (m_wdata       ),
+  .WSTRB   (m_wstrb       ),
+  .WLAST   (m_axi_wlast   ),
+  .WUSER   (WUSER         ),
+  .WVALID  (m_wvalid      ),
+  .WREADY  (m_wready      ),
+  //!
+  .BID     (m_axi_bid     ),
+  .BRESP   (m_axi_bresp   ),
+  .BVALID  (m_axi_bvalid  ),
+  .BUSER   ('0            ),
+  .BREADY  (m_axi_bready  ),
+  //!
+  .ARID    ('0            ),
+  .ARADDR  (m_axi_araddr  ),
+  .ARLEN   (m_axi_arlen   ),
+  .ARSIZE  (m_axi_arsize  ),
+  .ARBURST (m_axi_arburst ),
+  .ARLOCK  (m_axi_arlock  ),
+  .ARCACHE (m_axi_arcache ),
+  .ARPROT  (m_axi_arprot  ),
+  .ARREGION(m_axi_arregion),
+  .ARQOS   (m_axi_arqos   ),
+  .ARUSER  ('0            ),
+  .ARVALID (m_axi_arvalid ),
+  .ARREADY (m_axi_arready ),
+  //!
+  .RID     ('0            ),
+  .RDATA   (m_axi_rdata   ),
+  .RRESP   (m_axi_rresp   ),
+  .RLAST   (m_axi_rlast   ),
+  .RUSER   ('0            ),
+  .RVALID  (m_axi_rvalid  ),
+  .RREADY  (m_axi_rready  )
+);
 
 
 endmodule
