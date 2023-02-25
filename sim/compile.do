@@ -38,5 +38,6 @@ vlog -work msim -64 -incr -sv "+incdir+../src/" "../src/adv7393_line_buffer.sv"
 vlog -work msim -64 -incr -sv "+incdir+../src/" "../src/adv7393_top.sv"
 vlog -work msim -64 -incr -sv "+incdir+../src/" "../src/fifo_rd_dconv.sv"
 
+vlog -work msim -64 -incr -sv "+incdir+../src/import" "../src/import/tb_helper.sv"
 vlog -work msim -64 -incr -sv "+incdir+../src/" "../src/adv7393_top_tb.sv"
 

@@ -5,9 +5,11 @@
 module adv7393_top_tb;
 
 import tb_helper::*;
+import axi_pkg::*;
+import adv7393_pkg::*;
 
-localparam int CLOCK_PERIOD   = 5 ;
-localparam int RESET_DURATION = 10;
+int CLOCK_PERIOD   = 5 ;
+int RESET_DURATION = 10;
 
 logic                    clk           ;
 logic                    rst           ;
